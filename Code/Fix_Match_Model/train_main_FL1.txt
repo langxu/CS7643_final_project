@@ -1,0 +1,375 @@
+IMG_SIZE = 32
+BATCH_SIZE = 64
+NUM_EPOCHS = 150
+NUM_LABELED = 250  # Increased to 500 per class
+MU = 7
+THRESHOLD = 0.95  # Lowered to reduce bias
+LR = 0.03
+WD = 0.0005
+EMA_DECAY = 0.999
+LABEL_SMOOTHING = 0
+USE_FOCAL_LOSS = True  # Set to False to use standard CE loss
+FOCAL_LOSS_GAMMA = 2  # Moderate focus on hard examples
+FOCAL_LOSS_ALPHA = 0.9999  # Balanced class weighting
+
+04/24/2025 11:30:10 - INFO - root -   Using device: cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch 1/150:   0%|          | 0/7 [00:00<?, ?it/s]D:\Work\School\SP2025\CS 7643DeepLearning\Project\desktopVersion\try3_diffLoss\main1_5_FL.py:143: DeprecationWarning: AFFINE is deprecated and will be removed in Pillow 10 (2023-07-01). Use Transform.AFFINE instead.
+  return img.transform(img.size, Image.AFFINE, (1, 0, mag * random.choice([-1, 1]), 0, 1, 0))
+D:\Work\School\SP2025\CS 7643DeepLearning\Project\desktopVersion\try3_diffLoss\main1_5_FL.py:153: DeprecationWarning: AFFINE is deprecated and will be removed in Pillow 10 (2023-07-01). Use Transform.AFFINE instead.
+  return img.transform(img.size, Image.AFFINE, (1, 0, 0, mag * random.choice([-1, 1]), 1, 0))
+D:\Work\School\SP2025\CS 7643DeepLearning\Project\desktopVersion\try3_diffLoss\main1_5_FL.py:150: DeprecationWarning: AFFINE is deprecated and will be removed in Pillow 10 (2023-07-01). Use Transform.AFFINE instead.
+  return img.transform(img.size, Image.AFFINE, (1, mag * random.choice([-1, 1]), 0, 0, 1, 0))
+D:\Work\School\SP2025\CS 7643DeepLearning\Project\desktopVersion\try3_diffLoss\main1_5_FL.py:147: DeprecationWarning: AFFINE is deprecated and will be removed in Pillow 10 (2023-07-01). Use Transform.AFFINE instead.
+  return img.transform(img.size, Image.AFFINE, (1, 0, 0, 0, 1, mag * random.choice([-1, 1])))
+Epoch 1/150: 100%|██████████| 7/7 [00:05<00:00,  1.20it/s, Loss=0.1598, L Loss=0.1598, U Loss=0.0000, LR=0.029999]
+04/24/2025 11:30:19 - INFO - root -   Epoch 1: Val Loss: 1.4254, Val Acc: 49.40%, ship Val Acc: 98.40%, truck Val Acc: 0.40%, Test Loss: 1.3156, Test Acc: 49.65%
+04/24/2025 11:30:19 - INFO - root -   Saved best EMA model at epoch 1 with Val Acc: 49.40%
+Epoch 2/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1320, L Loss=0.1320, U Loss=0.0000, LR=0.029995]
+04/24/2025 11:30:26 - INFO - root -   Epoch 2: Val Loss: 1.2937, Val Acc: 50.40%, ship Val Acc: 99.60%, truck Val Acc: 1.20%, Test Loss: 1.2580, Test Acc: 49.70%
+04/24/2025 11:30:26 - INFO - root -   Saved best EMA model at epoch 2 with Val Acc: 50.40%
+Epoch 3/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1235, L Loss=0.1235, U Loss=0.0000, LR=0.029989]
+04/24/2025 11:30:34 - INFO - root -   Epoch 3: Val Loss: 1.2313, Val Acc: 49.60%, ship Val Acc: 98.80%, truck Val Acc: 0.40%, Test Loss: 1.1701, Test Acc: 49.80%
+Epoch 4/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1135, L Loss=0.1135, U Loss=0.0000, LR=0.029980]
+04/24/2025 11:30:41 - INFO - root -   Epoch 4: Val Loss: 1.1159, Val Acc: 49.40%, ship Val Acc: 98.00%, truck Val Acc: 0.80%, Test Loss: 1.0462, Test Acc: 49.40%
+Epoch 5/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1055, L Loss=0.1050, U Loss=0.0005, LR=0.029969]
+04/24/2025 11:30:48 - INFO - root -   Epoch 5: Val Loss: 1.0355, Val Acc: 48.80%, ship Val Acc: 96.80%, truck Val Acc: 0.80%, Test Loss: 0.9677, Test Acc: 49.85%
+Epoch 6/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1021, L Loss=0.1020, U Loss=0.0001, LR=0.029955]
+04/24/2025 11:30:55 - INFO - root -   Epoch 6: Val Loss: 0.9118, Val Acc: 49.60%, ship Val Acc: 95.20%, truck Val Acc: 4.00%, Test Loss: 0.8862, Test Acc: 49.40%
+Epoch 7/150: 100%|██████████| 7/7 [00:05<00:00,  1.19it/s, Loss=0.0874, L Loss=0.0872, U Loss=0.0002, LR=0.029938]
+04/24/2025 11:31:03 - INFO - root -   Epoch 7: Val Loss: 0.8481, Val Acc: 49.00%, ship Val Acc: 91.20%, truck Val Acc: 6.80%, Test Loss: 0.8275, Test Acc: 49.10%
+Epoch 8/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0955, L Loss=0.0949, U Loss=0.0006, LR=0.029919]
+04/24/2025 11:31:10 - INFO - root -   Epoch 8: Val Loss: 0.7970, Val Acc: 50.00%, ship Val Acc: 86.80%, truck Val Acc: 13.20%, Test Loss: 0.7826, Test Acc: 49.05%
+Epoch 9/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0894, L Loss=0.0890, U Loss=0.0004, LR=0.029898]
+04/24/2025 11:31:17 - INFO - root -   Epoch 9: Val Loss: 0.7707, Val Acc: 48.60%, ship Val Acc: 73.60%, truck Val Acc: 23.60%, Test Loss: 0.7456, Test Acc: 49.80%
+Epoch 10/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0815, L Loss=0.0796, U Loss=0.0019, LR=0.029874]
+04/24/2025 11:31:24 - INFO - root -   Epoch 10: Val Loss: 0.7416, Val Acc: 50.00%, ship Val Acc: 64.80%, truck Val Acc: 35.20%, Test Loss: 0.7225, Test Acc: 51.10%
+Epoch 11/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0810, L Loss=0.0793, U Loss=0.0018, LR=0.029848]
+04/24/2025 11:31:31 - INFO - root -   Epoch 11: Val Loss: 0.7381, Val Acc: 47.00%, ship Val Acc: 50.00%, truck Val Acc: 44.00%, Test Loss: 0.7120, Test Acc: 50.75%
+Epoch 12/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0888, L Loss=0.0855, U Loss=0.0033, LR=0.029819]
+04/24/2025 11:31:38 - INFO - root -   Epoch 12: Val Loss: 0.7250, Val Acc: 46.80%, ship Val Acc: 34.40%, truck Val Acc: 59.20%, Test Loss: 0.7047, Test Acc: 50.95%
+Epoch 13/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.0875, L Loss=0.0820, U Loss=0.0055, LR=0.029787]
+04/24/2025 11:31:45 - INFO - root -   Epoch 13: Val Loss: 0.7345, Val Acc: 48.20%, ship Val Acc: 24.00%, truck Val Acc: 72.40%, Test Loss: 0.7096, Test Acc: 51.80%
+Epoch 14/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0790, L Loss=0.0748, U Loss=0.0042, LR=0.029753]
+04/24/2025 11:31:52 - INFO - root -   Epoch 14: Val Loss: 0.7243, Val Acc: 49.40%, ship Val Acc: 14.40%, truck Val Acc: 84.40%, Test Loss: 0.7118, Test Acc: 52.20%
+Epoch 15/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.0745, L Loss=0.0687, U Loss=0.0058, LR=0.029717]
+04/24/2025 11:31:59 - INFO - root -   Epoch 15: Val Loss: 0.7358, Val Acc: 49.20%, ship Val Acc: 6.00%, truck Val Acc: 92.40%, Test Loss: 0.7291, Test Acc: 50.25%
+Epoch 16/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.0722, L Loss=0.0608, U Loss=0.0114, LR=0.029678]
+04/24/2025 11:32:07 - INFO - root -   Epoch 16: Val Loss: 0.7558, Val Acc: 50.00%, ship Val Acc: 3.60%, truck Val Acc: 96.40%, Test Loss: 0.7393, Test Acc: 50.55%
+Epoch 17/150: 100%|██████████| 7/7 [00:05<00:00,  1.19it/s, Loss=0.0929, L Loss=0.0723, U Loss=0.0206, LR=0.029637]
+04/24/2025 11:32:14 - INFO - root -   Epoch 17: Val Loss: 0.7593, Val Acc: 49.80%, ship Val Acc: 1.20%, truck Val Acc: 98.40%, Test Loss: 0.7554, Test Acc: 50.30%
+Epoch 18/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.0837, L Loss=0.0632, U Loss=0.0205, LR=0.029593]
+04/24/2025 11:32:21 - INFO - root -   Epoch 18: Val Loss: 0.7816, Val Acc: 49.60%, ship Val Acc: 0.00%, truck Val Acc: 99.20%, Test Loss: 0.7760, Test Acc: 50.20%
+Epoch 19/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0832, L Loss=0.0600, U Loss=0.0232, LR=0.029547]
+04/24/2025 11:32:28 - INFO - root -   Epoch 19: Val Loss: 0.8065, Val Acc: 50.20%, ship Val Acc: 0.40%, truck Val Acc: 100.00%, Test Loss: 0.7959, Test Acc: 49.90%
+Epoch 20/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0955, L Loss=0.0632, U Loss=0.0323, LR=0.029498]
+04/24/2025 11:32:35 - INFO - root -   Epoch 20: Val Loss: 0.8143, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8118, Test Acc: 50.05%
+Epoch 21/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1103, L Loss=0.0778, U Loss=0.0325, LR=0.029446]
+04/24/2025 11:32:42 - INFO - root -   Epoch 21: Val Loss: 0.8350, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8249, Test Acc: 49.95%
+Epoch 22/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0902, L Loss=0.0658, U Loss=0.0245, LR=0.029393]
+04/24/2025 11:32:49 - INFO - root -   Epoch 22: Val Loss: 0.8479, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8448, Test Acc: 50.00%
+Epoch 23/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0871, L Loss=0.0613, U Loss=0.0258, LR=0.029336]
+04/24/2025 11:32:56 - INFO - root -   Epoch 23: Val Loss: 0.8608, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8580, Test Acc: 50.00%
+Epoch 24/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.0878, L Loss=0.0549, U Loss=0.0329, LR=0.029278]
+04/24/2025 11:33:04 - INFO - root -   Epoch 24: Val Loss: 0.8715, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8658, Test Acc: 50.00%
+Epoch 25/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.0911, L Loss=0.0641, U Loss=0.0271, LR=0.029216]
+04/24/2025 11:33:11 - INFO - root -   Epoch 25: Val Loss: 0.8959, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8780, Test Acc: 50.00%
+Epoch 26/150: 100%|██████████| 7/7 [00:05<00:00,  1.19it/s, Loss=0.0962, L Loss=0.0618, U Loss=0.0344, LR=0.029153]
+04/24/2025 11:33:18 - INFO - root -   Epoch 26: Val Loss: 0.9002, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8872, Test Acc: 50.00%
+Epoch 27/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1047, L Loss=0.0568, U Loss=0.0479, LR=0.029087]
+04/24/2025 11:33:25 - INFO - root -   Epoch 27: Val Loss: 0.9132, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9057, Test Acc: 50.00%
+Epoch 28/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0899, L Loss=0.0519, U Loss=0.0380, LR=0.029018]
+04/24/2025 11:33:33 - INFO - root -   Epoch 28: Val Loss: 0.9221, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9131, Test Acc: 50.00%
+Epoch 29/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0973, L Loss=0.0472, U Loss=0.0501, LR=0.028947]
+04/24/2025 11:33:40 - INFO - root -   Epoch 29: Val Loss: 0.9363, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9256, Test Acc: 50.00%
+Epoch 30/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1244, L Loss=0.0528, U Loss=0.0716, LR=0.028874]
+04/24/2025 11:33:47 - INFO - root -   Epoch 30: Val Loss: 0.9395, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9316, Test Acc: 50.00%
+Epoch 31/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1194, L Loss=0.0545, U Loss=0.0650, LR=0.028798]
+04/24/2025 11:33:54 - INFO - root -   Epoch 31: Val Loss: 0.9345, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9374, Test Acc: 50.00%
+Epoch 32/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1066, L Loss=0.0449, U Loss=0.0617, LR=0.028720]
+04/24/2025 11:34:01 - INFO - root -   Epoch 32: Val Loss: 0.9467, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9437, Test Acc: 50.00%
+Epoch 33/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1093, L Loss=0.0453, U Loss=0.0640, LR=0.028639]
+04/24/2025 11:34:08 - INFO - root -   Epoch 33: Val Loss: 0.9485, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9511, Test Acc: 50.00%
+Epoch 34/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1073, L Loss=0.0389, U Loss=0.0684, LR=0.028556]
+04/24/2025 11:34:15 - INFO - root -   Epoch 34: Val Loss: 0.9519, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9552, Test Acc: 50.00%
+Epoch 35/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.1423, L Loss=0.0623, U Loss=0.0800, LR=0.028470]
+04/24/2025 11:34:22 - INFO - root -   Epoch 35: Val Loss: 0.9500, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9554, Test Acc: 50.00%
+Epoch 36/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.1439, L Loss=0.0736, U Loss=0.0703, LR=0.028383]
+04/24/2025 11:34:29 - INFO - root -   Epoch 36: Val Loss: 0.9561, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9524, Test Acc: 50.00%
+Epoch 37/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.0957, L Loss=0.0511, U Loss=0.0446, LR=0.028292]
+04/24/2025 11:34:36 - INFO - root -   Epoch 37: Val Loss: 0.9558, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9500, Test Acc: 50.00%
+Epoch 38/150: 100%|██████████| 7/7 [00:05<00:00,  1.30it/s, Loss=0.0819, L Loss=0.0348, U Loss=0.0471, LR=0.028200]
+04/24/2025 11:34:43 - INFO - root -   Epoch 38: Val Loss: 0.9463, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9520, Test Acc: 50.00%
+Epoch 39/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.1085, L Loss=0.0393, U Loss=0.0692, LR=0.028105]
+04/24/2025 11:34:50 - INFO - root -   Epoch 39: Val Loss: 0.9514, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9426, Test Acc: 50.00%
+Epoch 40/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.0984, L Loss=0.0347, U Loss=0.0637, LR=0.028007]
+04/24/2025 11:34:57 - INFO - root -   Epoch 40: Val Loss: 0.9518, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9392, Test Acc: 50.00%
+Epoch 41/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1219, L Loss=0.0459, U Loss=0.0760, LR=0.027908]
+04/24/2025 11:35:04 - INFO - root -   Epoch 41: Val Loss: 0.9404, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9375, Test Acc: 50.00%
+Epoch 42/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1201, L Loss=0.0463, U Loss=0.0738, LR=0.027806]
+04/24/2025 11:35:11 - INFO - root -   Epoch 42: Val Loss: 0.9381, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9353, Test Acc: 50.00%
+Epoch 43/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1114, L Loss=0.0380, U Loss=0.0734, LR=0.027701]
+04/24/2025 11:35:18 - INFO - root -   Epoch 43: Val Loss: 0.9306, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9361, Test Acc: 50.00%
+Epoch 44/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1068, L Loss=0.0367, U Loss=0.0702, LR=0.027595]
+04/24/2025 11:35:25 - INFO - root -   Epoch 44: Val Loss: 0.9319, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9300, Test Acc: 50.00%
+Epoch 45/150: 100%|██████████| 7/7 [00:05<00:00,  1.28it/s, Loss=0.1112, L Loss=0.0341, U Loss=0.0772, LR=0.027486]
+04/24/2025 11:35:32 - INFO - root -   Epoch 45: Val Loss: 0.9302, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9274, Test Acc: 50.00%
+Epoch 46/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1148, L Loss=0.0279, U Loss=0.0869, LR=0.027374]
+04/24/2025 11:35:39 - INFO - root -   Epoch 46: Val Loss: 0.9258, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9225, Test Acc: 50.00%
+Epoch 47/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1390, L Loss=0.0515, U Loss=0.0875, LR=0.027261]
+04/24/2025 11:35:46 - INFO - root -   Epoch 47: Val Loss: 0.9164, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9167, Test Acc: 50.00%
+Epoch 48/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1183, L Loss=0.0343, U Loss=0.0840, LR=0.027145]
+04/24/2025 11:35:53 - INFO - root -   Epoch 48: Val Loss: 0.9084, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9055, Test Acc: 50.00%
+Epoch 49/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1200, L Loss=0.0439, U Loss=0.0761, LR=0.027027]
+04/24/2025 11:36:00 - INFO - root -   Epoch 49: Val Loss: 0.9063, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.9011, Test Acc: 50.05%
+Epoch 50/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1309, L Loss=0.0490, U Loss=0.0819, LR=0.026906]
+04/24/2025 11:36:07 - INFO - root -   Epoch 50: Val Loss: 0.9015, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8917, Test Acc: 50.05%
+Epoch 51/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1092, L Loss=0.0317, U Loss=0.0774, LR=0.026783]
+04/24/2025 11:36:15 - INFO - root -   Epoch 51: Val Loss: 0.8891, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8893, Test Acc: 50.05%
+Epoch 52/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1145, L Loss=0.0264, U Loss=0.0881, LR=0.026659]
+04/24/2025 11:36:22 - INFO - root -   Epoch 52: Val Loss: 0.8834, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8879, Test Acc: 50.05%
+Epoch 53/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1001, L Loss=0.0270, U Loss=0.0731, LR=0.026531]
+04/24/2025 11:36:29 - INFO - root -   Epoch 53: Val Loss: 0.8841, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8844, Test Acc: 50.10%
+Epoch 54/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.1000, L Loss=0.0205, U Loss=0.0795, LR=0.026402]
+04/24/2025 11:36:36 - INFO - root -   Epoch 54: Val Loss: 0.8858, Val Acc: 50.20%, ship Val Acc: 0.40%, truck Val Acc: 100.00%, Test Loss: 0.8748, Test Acc: 50.05%
+Epoch 55/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1145, L Loss=0.0222, U Loss=0.0923, LR=0.026270]
+04/24/2025 11:36:43 - INFO - root -   Epoch 55: Val Loss: 0.8714, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8691, Test Acc: 50.05%
+Epoch 56/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1239, L Loss=0.0345, U Loss=0.0894, LR=0.026136]
+04/24/2025 11:36:50 - INFO - root -   Epoch 56: Val Loss: 0.8655, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8650, Test Acc: 50.15%
+Epoch 57/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.1263, L Loss=0.0285, U Loss=0.0978, LR=0.026000]
+04/24/2025 11:36:57 - INFO - root -   Epoch 57: Val Loss: 0.8608, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8545, Test Acc: 50.15%
+Epoch 58/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1094, L Loss=0.0231, U Loss=0.0864, LR=0.025862]
+04/24/2025 11:37:04 - INFO - root -   Epoch 58: Val Loss: 0.8522, Val Acc: 50.00%, ship Val Acc: 0.00%, truck Val Acc: 100.00%, Test Loss: 0.8480, Test Acc: 50.20%
+Epoch 59/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1168, L Loss=0.0235, U Loss=0.0933, LR=0.025722]
+04/24/2025 11:37:11 - INFO - root -   Epoch 59: Val Loss: 0.8414, Val Acc: 50.20%, ship Val Acc: 0.40%, truck Val Acc: 100.00%, Test Loss: 0.8404, Test Acc: 50.35%
+Epoch 60/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.1183, L Loss=0.0283, U Loss=0.0900, LR=0.025579]
+04/24/2025 11:37:18 - INFO - root -   Epoch 60: Val Loss: 0.8376, Val Acc: 50.20%, ship Val Acc: 0.40%, truck Val Acc: 100.00%, Test Loss: 0.8341, Test Acc: 50.35%
+Epoch 61/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1294, L Loss=0.0351, U Loss=0.0943, LR=0.025435]
+04/24/2025 11:37:26 - INFO - root -   Epoch 61: Val Loss: 0.8295, Val Acc: 50.40%, ship Val Acc: 0.80%, truck Val Acc: 100.00%, Test Loss: 0.8251, Test Acc: 50.45%
+Epoch 62/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1347, L Loss=0.0456, U Loss=0.0891, LR=0.025288]
+04/24/2025 11:37:33 - INFO - root -   Epoch 62: Val Loss: 0.8253, Val Acc: 50.20%, ship Val Acc: 0.40%, truck Val Acc: 100.00%, Test Loss: 0.8135, Test Acc: 50.65%
+Epoch 63/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0995, L Loss=0.0249, U Loss=0.0747, LR=0.025139]
+04/24/2025 11:37:40 - INFO - root -   Epoch 63: Val Loss: 0.8132, Val Acc: 50.40%, ship Val Acc: 0.80%, truck Val Acc: 100.00%, Test Loss: 0.8097, Test Acc: 50.90%
+Epoch 64/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.1089, L Loss=0.0194, U Loss=0.0895, LR=0.024988]
+04/24/2025 11:37:47 - INFO - root -   Epoch 64: Val Loss: 0.8116, Val Acc: 51.20%, ship Val Acc: 2.40%, truck Val Acc: 100.00%, Test Loss: 0.8052, Test Acc: 50.75%
+04/24/2025 11:37:47 - INFO - root -   Saved best EMA model at epoch 64 with Val Acc: 51.20%
+Epoch 65/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1001, L Loss=0.0201, U Loss=0.0799, LR=0.024834]
+04/24/2025 11:37:54 - INFO - root -   Epoch 65: Val Loss: 0.7970, Val Acc: 51.00%, ship Val Acc: 2.00%, truck Val Acc: 100.00%, Test Loss: 0.7922, Test Acc: 51.15%
+Epoch 66/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1289, L Loss=0.0273, U Loss=0.1015, LR=0.024679]
+04/24/2025 11:38:01 - INFO - root -   Epoch 66: Val Loss: 0.8076, Val Acc: 50.60%, ship Val Acc: 1.20%, truck Val Acc: 100.00%, Test Loss: 0.7845, Test Acc: 51.05%
+Epoch 67/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1252, L Loss=0.0252, U Loss=0.1000, LR=0.024522]
+04/24/2025 11:38:08 - INFO - root -   Epoch 67: Val Loss: 0.7946, Val Acc: 51.00%, ship Val Acc: 2.00%, truck Val Acc: 100.00%, Test Loss: 0.7777, Test Acc: 51.50%
+Epoch 68/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1219, L Loss=0.0304, U Loss=0.0915, LR=0.024363]
+04/24/2025 11:38:15 - INFO - root -   Epoch 68: Val Loss: 0.7833, Val Acc: 51.40%, ship Val Acc: 2.80%, truck Val Acc: 100.00%, Test Loss: 0.7722, Test Acc: 51.60%
+04/24/2025 11:38:15 - INFO - root -   Saved best EMA model at epoch 68 with Val Acc: 51.40%
+Epoch 69/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.0998, L Loss=0.0157, U Loss=0.0841, LR=0.024201]
+04/24/2025 11:38:23 - INFO - root -   Epoch 69: Val Loss: 0.7695, Val Acc: 52.00%, ship Val Acc: 4.00%, truck Val Acc: 100.00%, Test Loss: 0.7635, Test Acc: 51.80%
+04/24/2025 11:38:23 - INFO - root -   Saved best EMA model at epoch 69 with Val Acc: 52.00%
+Epoch 70/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1171, L Loss=0.0200, U Loss=0.0971, LR=0.024038]
+04/24/2025 11:38:30 - INFO - root -   Epoch 70: Val Loss: 0.7593, Val Acc: 51.60%, ship Val Acc: 3.20%, truck Val Acc: 100.00%, Test Loss: 0.7553, Test Acc: 52.20%
+Epoch 71/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1056, L Loss=0.0264, U Loss=0.0793, LR=0.023872]
+04/24/2025 11:38:37 - INFO - root -   Epoch 71: Val Loss: 0.7468, Val Acc: 52.20%, ship Val Acc: 4.40%, truck Val Acc: 100.00%, Test Loss: 0.7493, Test Acc: 52.05%
+04/24/2025 11:38:37 - INFO - root -   Saved best EMA model at epoch 71 with Val Acc: 52.20%
+Epoch 72/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1147, L Loss=0.0301, U Loss=0.0846, LR=0.023705]
+04/24/2025 11:38:44 - INFO - root -   Epoch 72: Val Loss: 0.7435, Val Acc: 52.60%, ship Val Acc: 5.20%, truck Val Acc: 100.00%, Test Loss: 0.7381, Test Acc: 52.60%
+04/24/2025 11:38:44 - INFO - root -   Saved best EMA model at epoch 72 with Val Acc: 52.60%
+Epoch 73/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1380, L Loss=0.0367, U Loss=0.1013, LR=0.023535]
+04/24/2025 11:38:51 - INFO - root -   Epoch 73: Val Loss: 0.7335, Val Acc: 53.00%, ship Val Acc: 6.00%, truck Val Acc: 100.00%, Test Loss: 0.7275, Test Acc: 53.05%
+04/24/2025 11:38:51 - INFO - root -   Saved best EMA model at epoch 73 with Val Acc: 53.00%
+Epoch 74/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1015, L Loss=0.0140, U Loss=0.0875, LR=0.023364]
+04/24/2025 11:38:58 - INFO - root -   Epoch 74: Val Loss: 0.7337, Val Acc: 53.00%, ship Val Acc: 6.00%, truck Val Acc: 100.00%, Test Loss: 0.7167, Test Acc: 53.55%
+Epoch 75/150: 100%|██████████| 7/7 [00:05<00:00,  1.20it/s, Loss=0.1133, L Loss=0.0246, U Loss=0.0888, LR=0.023190]
+04/24/2025 11:39:06 - INFO - root -   Epoch 75: Val Loss: 0.7170, Val Acc: 52.80%, ship Val Acc: 6.00%, truck Val Acc: 99.60%, Test Loss: 0.7097, Test Acc: 53.95%
+Epoch 76/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1189, L Loss=0.0194, U Loss=0.0995, LR=0.023015]
+04/24/2025 11:39:13 - INFO - root -   Epoch 76: Val Loss: 0.7077, Val Acc: 54.20%, ship Val Acc: 8.40%, truck Val Acc: 100.00%, Test Loss: 0.7025, Test Acc: 54.55%
+04/24/2025 11:39:13 - INFO - root -   Saved best EMA model at epoch 76 with Val Acc: 54.20%
+Epoch 77/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1360, L Loss=0.0178, U Loss=0.1182, LR=0.022838]
+04/24/2025 11:39:20 - INFO - root -   Epoch 77: Val Loss: 0.7033, Val Acc: 53.80%, ship Val Acc: 7.60%, truck Val Acc: 100.00%, Test Loss: 0.6959, Test Acc: 54.55%
+Epoch 78/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1199, L Loss=0.0172, U Loss=0.1026, LR=0.022658]
+04/24/2025 11:39:27 - INFO - root -   Epoch 78: Val Loss: 0.7011, Val Acc: 55.80%, ship Val Acc: 12.00%, truck Val Acc: 99.60%, Test Loss: 0.6878, Test Acc: 55.10%
+04/24/2025 11:39:27 - INFO - root -   Saved best EMA model at epoch 78 with Val Acc: 55.80%
+Epoch 79/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.0905, L Loss=0.0156, U Loss=0.0749, LR=0.022477]
+04/24/2025 11:39:34 - INFO - root -   Epoch 79: Val Loss: 0.6895, Val Acc: 55.00%, ship Val Acc: 10.40%, truck Val Acc: 99.60%, Test Loss: 0.6765, Test Acc: 55.75%
+Epoch 80/150: 100%|██████████| 7/7 [00:05<00:00,  1.20it/s, Loss=0.1030, L Loss=0.0145, U Loss=0.0884, LR=0.022294]
+04/24/2025 11:39:41 - INFO - root -   Epoch 80: Val Loss: 0.6776, Val Acc: 56.00%, ship Val Acc: 12.00%, truck Val Acc: 100.00%, Test Loss: 0.6669, Test Acc: 56.50%
+04/24/2025 11:39:41 - INFO - root -   Saved best EMA model at epoch 80 with Val Acc: 56.00%
+Epoch 81/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1142, L Loss=0.0107, U Loss=0.1035, LR=0.022109]
+04/24/2025 11:39:48 - INFO - root -   Epoch 81: Val Loss: 0.6680, Val Acc: 56.60%, ship Val Acc: 13.20%, truck Val Acc: 100.00%, Test Loss: 0.6664, Test Acc: 56.10%
+04/24/2025 11:39:48 - INFO - root -   Saved best EMA model at epoch 81 with Val Acc: 56.60%
+Epoch 82/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1152, L Loss=0.0188, U Loss=0.0964, LR=0.021923]
+04/24/2025 11:39:56 - INFO - root -   Epoch 82: Val Loss: 0.6631, Val Acc: 56.80%, ship Val Acc: 14.00%, truck Val Acc: 99.60%, Test Loss: 0.6568, Test Acc: 56.90%
+04/24/2025 11:39:56 - INFO - root -   Saved best EMA model at epoch 82 with Val Acc: 56.80%
+Epoch 83/150: 100%|██████████| 7/7 [00:05<00:00,  1.20it/s, Loss=0.1081, L Loss=0.0219, U Loss=0.0862, LR=0.021734]
+04/24/2025 11:40:03 - INFO - root -   Epoch 83: Val Loss: 0.6529, Val Acc: 58.60%, ship Val Acc: 17.20%, truck Val Acc: 100.00%, Test Loss: 0.6508, Test Acc: 57.50%
+04/24/2025 11:40:03 - INFO - root -   Saved best EMA model at epoch 83 with Val Acc: 58.60%
+Epoch 84/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1151, L Loss=0.0128, U Loss=0.1023, LR=0.021544]
+04/24/2025 11:40:10 - INFO - root -   Epoch 84: Val Loss: 0.6557, Val Acc: 58.80%, ship Val Acc: 17.60%, truck Val Acc: 100.00%, Test Loss: 0.6461, Test Acc: 58.35%
+04/24/2025 11:40:10 - INFO - root -   Saved best EMA model at epoch 84 with Val Acc: 58.80%
+Epoch 85/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1048, L Loss=0.0157, U Loss=0.0890, LR=0.021352]
+04/24/2025 11:40:18 - INFO - root -   Epoch 85: Val Loss: 0.6385, Val Acc: 58.60%, ship Val Acc: 18.40%, truck Val Acc: 98.80%, Test Loss: 0.6361, Test Acc: 59.50%
+Epoch 86/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1109, L Loss=0.0096, U Loss=0.1013, LR=0.021158]
+04/24/2025 11:40:25 - INFO - root -   Epoch 86: Val Loss: 0.6366, Val Acc: 59.80%, ship Val Acc: 20.80%, truck Val Acc: 98.80%, Test Loss: 0.6275, Test Acc: 60.20%
+04/24/2025 11:40:25 - INFO - root -   Saved best EMA model at epoch 86 with Val Acc: 59.80%
+Epoch 87/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1146, L Loss=0.0079, U Loss=0.1067, LR=0.020962]
+04/24/2025 11:40:32 - INFO - root -   Epoch 87: Val Loss: 0.6314, Val Acc: 59.60%, ship Val Acc: 20.00%, truck Val Acc: 99.20%, Test Loss: 0.6223, Test Acc: 60.95%
+Epoch 88/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1079, L Loss=0.0170, U Loss=0.0909, LR=0.020764]
+04/24/2025 11:40:39 - INFO - root -   Epoch 88: Val Loss: 0.6298, Val Acc: 59.80%, ship Val Acc: 20.00%, truck Val Acc: 99.60%, Test Loss: 0.6143, Test Acc: 61.50%
+Epoch 89/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1197, L Loss=0.0158, U Loss=0.1039, LR=0.020565]
+04/24/2025 11:40:46 - INFO - root -   Epoch 89: Val Loss: 0.6128, Val Acc: 61.20%, ship Val Acc: 23.60%, truck Val Acc: 98.80%, Test Loss: 0.6076, Test Acc: 62.25%
+04/24/2025 11:40:46 - INFO - root -   Saved best EMA model at epoch 89 with Val Acc: 61.20%
+Epoch 90/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1029, L Loss=0.0131, U Loss=0.0898, LR=0.020364]
+04/24/2025 11:40:53 - INFO - root -   Epoch 90: Val Loss: 0.6039, Val Acc: 61.60%, ship Val Acc: 24.80%, truck Val Acc: 98.40%, Test Loss: 0.6016, Test Acc: 63.35%
+04/24/2025 11:40:53 - INFO - root -   Saved best EMA model at epoch 90 with Val Acc: 61.60%
+Epoch 91/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1015, L Loss=0.0117, U Loss=0.0898, LR=0.020161]
+04/24/2025 11:41:00 - INFO - root -   Epoch 91: Val Loss: 0.6041, Val Acc: 61.80%, ship Val Acc: 24.80%, truck Val Acc: 98.80%, Test Loss: 0.5905, Test Acc: 63.80%
+04/24/2025 11:41:00 - INFO - root -   Saved best EMA model at epoch 91 with Val Acc: 61.80%
+Epoch 92/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.1003, L Loss=0.0128, U Loss=0.0875, LR=0.019957]
+04/24/2025 11:41:08 - INFO - root -   Epoch 92: Val Loss: 0.5911, Val Acc: 62.40%, ship Val Acc: 26.00%, truck Val Acc: 98.80%, Test Loss: 0.5882, Test Acc: 64.80%
+04/24/2025 11:41:08 - INFO - root -   Saved best EMA model at epoch 92 with Val Acc: 62.40%
+Epoch 93/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1050, L Loss=0.0065, U Loss=0.0985, LR=0.019751]
+04/24/2025 11:41:15 - INFO - root -   Epoch 93: Val Loss: 0.5890, Val Acc: 63.60%, ship Val Acc: 28.40%, truck Val Acc: 98.80%, Test Loss: 0.5790, Test Acc: 65.60%
+04/24/2025 11:41:15 - INFO - root -   Saved best EMA model at epoch 93 with Val Acc: 63.60%
+Epoch 94/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1176, L Loss=0.0110, U Loss=0.1066, LR=0.019543]
+04/24/2025 11:41:22 - INFO - root -   Epoch 94: Val Loss: 0.5826, Val Acc: 65.20%, ship Val Acc: 31.60%, truck Val Acc: 98.80%, Test Loss: 0.5727, Test Acc: 66.70%
+04/24/2025 11:41:22 - INFO - root -   Saved best EMA model at epoch 94 with Val Acc: 65.20%
+Epoch 95/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1391, L Loss=0.0201, U Loss=0.1190, LR=0.019334]
+04/24/2025 11:41:29 - INFO - root -   Epoch 95: Val Loss: 0.5726, Val Acc: 65.00%, ship Val Acc: 32.40%, truck Val Acc: 97.60%, Test Loss: 0.5677, Test Acc: 67.20%
+Epoch 96/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1017, L Loss=0.0063, U Loss=0.0954, LR=0.019123]
+04/24/2025 11:41:36 - INFO - root -   Epoch 96: Val Loss: 0.5662, Val Acc: 66.80%, ship Val Acc: 34.80%, truck Val Acc: 98.80%, Test Loss: 0.5616, Test Acc: 67.70%
+04/24/2025 11:41:36 - INFO - root -   Saved best EMA model at epoch 96 with Val Acc: 66.80%
+Epoch 97/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1103, L Loss=0.0091, U Loss=0.1012, LR=0.018910]
+04/24/2025 11:41:43 - INFO - root -   Epoch 97: Val Loss: 0.5703, Val Acc: 65.80%, ship Val Acc: 33.20%, truck Val Acc: 98.40%, Test Loss: 0.5548, Test Acc: 68.85%
+Epoch 98/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1039, L Loss=0.0120, U Loss=0.0919, LR=0.018696]
+04/24/2025 11:41:51 - INFO - root -   Epoch 98: Val Loss: 0.5493, Val Acc: 68.20%, ship Val Acc: 38.00%, truck Val Acc: 98.40%, Test Loss: 0.5482, Test Acc: 69.40%
+04/24/2025 11:41:51 - INFO - root -   Saved best EMA model at epoch 98 with Val Acc: 68.20%
+Epoch 99/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1213, L Loss=0.0198, U Loss=0.1015, LR=0.018480]
+04/24/2025 11:41:58 - INFO - root -   Epoch 99: Val Loss: 0.5542, Val Acc: 68.00%, ship Val Acc: 39.20%, truck Val Acc: 96.80%, Test Loss: 0.5437, Test Acc: 69.95%
+Epoch 100/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.1099, L Loss=0.0090, U Loss=0.1008, LR=0.018263]
+04/24/2025 11:42:05 - INFO - root -   Epoch 100: Val Loss: 0.5447, Val Acc: 68.40%, ship Val Acc: 39.20%, truck Val Acc: 97.60%, Test Loss: 0.5352, Test Acc: 70.45%
+04/24/2025 11:42:05 - INFO - root -   Saved best EMA model at epoch 100 with Val Acc: 68.40%
+Epoch 101/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1003, L Loss=0.0109, U Loss=0.0894, LR=0.018044]
+04/24/2025 11:42:12 - INFO - root -   Epoch 101: Val Loss: 0.5433, Val Acc: 70.00%, ship Val Acc: 42.00%, truck Val Acc: 98.00%, Test Loss: 0.5355, Test Acc: 71.20%
+04/24/2025 11:42:12 - INFO - root -   Saved best EMA model at epoch 101 with Val Acc: 70.00%
+Epoch 102/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1001, L Loss=0.0051, U Loss=0.0951, LR=0.017824]
+04/24/2025 11:42:19 - INFO - root -   Epoch 102: Val Loss: 0.5301, Val Acc: 71.40%, ship Val Acc: 45.20%, truck Val Acc: 97.60%, Test Loss: 0.5257, Test Acc: 72.65%
+04/24/2025 11:42:19 - INFO - root -   Saved best EMA model at epoch 102 with Val Acc: 71.40%
+Epoch 103/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1049, L Loss=0.0072, U Loss=0.0977, LR=0.017602]
+04/24/2025 11:42:26 - INFO - root -   Epoch 103: Val Loss: 0.5341, Val Acc: 70.00%, ship Val Acc: 44.00%, truck Val Acc: 96.00%, Test Loss: 0.5212, Test Acc: 71.85%
+Epoch 104/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1329, L Loss=0.0184, U Loss=0.1145, LR=0.017378]
+04/24/2025 11:42:33 - INFO - root -   Epoch 104: Val Loss: 0.5212, Val Acc: 72.20%, ship Val Acc: 48.40%, truck Val Acc: 96.00%, Test Loss: 0.5151, Test Acc: 73.40%
+04/24/2025 11:42:33 - INFO - root -   Saved best EMA model at epoch 104 with Val Acc: 72.20%
+Epoch 105/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1098, L Loss=0.0171, U Loss=0.0928, LR=0.017154]
+04/24/2025 11:42:40 - INFO - root -   Epoch 105: Val Loss: 0.5175, Val Acc: 70.40%, ship Val Acc: 44.40%, truck Val Acc: 96.40%, Test Loss: 0.5123, Test Acc: 74.35%
+Epoch 106/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1027, L Loss=0.0092, U Loss=0.0935, LR=0.016927]
+04/24/2025 11:42:48 - INFO - root -   Epoch 106: Val Loss: 0.5153, Val Acc: 71.60%, ship Val Acc: 46.40%, truck Val Acc: 96.80%, Test Loss: 0.5092, Test Acc: 73.35%
+Epoch 107/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.1027, L Loss=0.0061, U Loss=0.0965, LR=0.016700]
+04/24/2025 11:42:55 - INFO - root -   Epoch 107: Val Loss: 0.5056, Val Acc: 73.00%, ship Val Acc: 50.00%, truck Val Acc: 96.00%, Test Loss: 0.5017, Test Acc: 75.30%
+04/24/2025 11:42:55 - INFO - root -   Saved best EMA model at epoch 107 with Val Acc: 73.00%
+Epoch 108/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.1022, L Loss=0.0068, U Loss=0.0954, LR=0.016471]
+04/24/2025 11:43:02 - INFO - root -   Epoch 108: Val Loss: 0.5041, Val Acc: 73.20%, ship Val Acc: 50.80%, truck Val Acc: 95.60%, Test Loss: 0.4937, Test Acc: 75.65%
+04/24/2025 11:43:02 - INFO - root -   Saved best EMA model at epoch 108 with Val Acc: 73.20%
+Epoch 109/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.0962, L Loss=0.0045, U Loss=0.0917, LR=0.016240]
+04/24/2025 11:43:09 - INFO - root -   Epoch 109: Val Loss: 0.5049, Val Acc: 73.80%, ship Val Acc: 51.60%, truck Val Acc: 96.00%, Test Loss: 0.4932, Test Acc: 76.25%
+04/24/2025 11:43:09 - INFO - root -   Saved best EMA model at epoch 109 with Val Acc: 73.80%
+Epoch 110/150: 100%|██████████| 7/7 [00:05<00:00,  1.21it/s, Loss=0.1143, L Loss=0.0082, U Loss=0.1061, LR=0.016008]
+04/24/2025 11:43:16 - INFO - root -   Epoch 110: Val Loss: 0.4975, Val Acc: 74.20%, ship Val Acc: 52.40%, truck Val Acc: 96.00%, Test Loss: 0.4880, Test Acc: 76.65%
+04/24/2025 11:43:16 - INFO - root -   Saved best EMA model at epoch 110 with Val Acc: 74.20%
+Epoch 111/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1163, L Loss=0.0187, U Loss=0.0976, LR=0.015775]
+04/24/2025 11:43:23 - INFO - root -   Epoch 111: Val Loss: 0.4934, Val Acc: 75.00%, ship Val Acc: 52.80%, truck Val Acc: 97.20%, Test Loss: 0.4822, Test Acc: 77.25%
+04/24/2025 11:43:23 - INFO - root -   Saved best EMA model at epoch 111 with Val Acc: 75.00%
+Epoch 112/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1162, L Loss=0.0168, U Loss=0.0994, LR=0.015541]
+04/24/2025 11:43:31 - INFO - root -   Epoch 112: Val Loss: 0.4876, Val Acc: 75.20%, ship Val Acc: 55.60%, truck Val Acc: 94.80%, Test Loss: 0.4792, Test Acc: 76.90%
+04/24/2025 11:43:31 - INFO - root -   Saved best EMA model at epoch 112 with Val Acc: 75.20%
+Epoch 113/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.0902, L Loss=0.0048, U Loss=0.0853, LR=0.015305]
+04/24/2025 11:43:38 - INFO - root -   Epoch 113: Val Loss: 0.4867, Val Acc: 76.20%, ship Val Acc: 58.00%, truck Val Acc: 94.40%, Test Loss: 0.4737, Test Acc: 78.35%
+04/24/2025 11:43:38 - INFO - root -   Saved best EMA model at epoch 113 with Val Acc: 76.20%
+Epoch 114/150: 100%|██████████| 7/7 [00:05<00:00,  1.20it/s, Loss=0.0906, L Loss=0.0046, U Loss=0.0860, LR=0.015068]
+04/24/2025 11:43:45 - INFO - root -   Epoch 114: Val Loss: 0.4785, Val Acc: 76.00%, ship Val Acc: 56.00%, truck Val Acc: 96.00%, Test Loss: 0.4701, Test Acc: 79.20%
+Epoch 115/150: 100%|██████████| 7/7 [00:05<00:00,  1.20it/s, Loss=0.1094, L Loss=0.0097, U Loss=0.0997, LR=0.014830]
+04/24/2025 11:43:53 - INFO - root -   Epoch 115: Val Loss: 0.4730, Val Acc: 77.00%, ship Val Acc: 58.80%, truck Val Acc: 95.20%, Test Loss: 0.4645, Test Acc: 79.30%
+04/24/2025 11:43:53 - INFO - root -   Saved best EMA model at epoch 115 with Val Acc: 77.00%
+Epoch 116/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0922, L Loss=0.0072, U Loss=0.0851, LR=0.014590]
+04/24/2025 11:44:00 - INFO - root -   Epoch 116: Val Loss: 0.4633, Val Acc: 79.40%, ship Val Acc: 63.60%, truck Val Acc: 95.20%, Test Loss: 0.4635, Test Acc: 79.20%
+04/24/2025 11:44:00 - INFO - root -   Saved best EMA model at epoch 116 with Val Acc: 79.40%
+Epoch 117/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1046, L Loss=0.0175, U Loss=0.0871, LR=0.014349]
+04/24/2025 11:44:07 - INFO - root -   Epoch 117: Val Loss: 0.4679, Val Acc: 78.00%, ship Val Acc: 61.60%, truck Val Acc: 94.40%, Test Loss: 0.4558, Test Acc: 80.05%
+Epoch 118/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1044, L Loss=0.0131, U Loss=0.0913, LR=0.014107]
+04/24/2025 11:44:14 - INFO - root -   Epoch 118: Val Loss: 0.4595, Val Acc: 79.40%, ship Val Acc: 64.40%, truck Val Acc: 94.40%, Test Loss: 0.4550, Test Acc: 80.75%
+Epoch 119/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1008, L Loss=0.0103, U Loss=0.0906, LR=0.013864]
+04/24/2025 11:44:21 - INFO - root -   Epoch 119: Val Loss: 0.4586, Val Acc: 78.60%, ship Val Acc: 63.60%, truck Val Acc: 93.60%, Test Loss: 0.4493, Test Acc: 80.55%
+Epoch 120/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1068, L Loss=0.0176, U Loss=0.0892, LR=0.013620]
+04/24/2025 11:44:28 - INFO - root -   Epoch 120: Val Loss: 0.4483, Val Acc: 79.20%, ship Val Acc: 65.60%, truck Val Acc: 92.80%, Test Loss: 0.4450, Test Acc: 80.95%
+Epoch 121/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.0963, L Loss=0.0083, U Loss=0.0880, LR=0.013374]
+04/24/2025 11:44:35 - INFO - root -   Epoch 121: Val Loss: 0.4526, Val Acc: 77.20%, ship Val Acc: 62.80%, truck Val Acc: 91.60%, Test Loss: 0.4390, Test Acc: 82.00%
+Epoch 122/150: 100%|██████████| 7/7 [00:05<00:00,  1.22it/s, Loss=0.0906, L Loss=0.0038, U Loss=0.0868, LR=0.013128]
+04/24/2025 11:44:42 - INFO - root -   Epoch 122: Val Loss: 0.4428, Val Acc: 81.20%, ship Val Acc: 68.80%, truck Val Acc: 93.60%, Test Loss: 0.4397, Test Acc: 81.85%
+04/24/2025 11:44:42 - INFO - root -   Saved best EMA model at epoch 122 with Val Acc: 81.20%
+Epoch 123/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.0944, L Loss=0.0033, U Loss=0.0911, LR=0.012880]
+04/24/2025 11:44:50 - INFO - root -   Epoch 123: Val Loss: 0.4406, Val Acc: 80.40%, ship Val Acc: 68.80%, truck Val Acc: 92.00%, Test Loss: 0.4380, Test Acc: 82.00%
+Epoch 124/150: 100%|██████████| 7/7 [00:05<00:00,  1.23it/s, Loss=0.1146, L Loss=0.0084, U Loss=0.1062, LR=0.012631]
+04/24/2025 11:44:57 - INFO - root -   Epoch 124: Val Loss: 0.4406, Val Acc: 79.60%, ship Val Acc: 67.60%, truck Val Acc: 91.60%, Test Loss: 0.4282, Test Acc: 82.70%
+Epoch 125/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1128, L Loss=0.0099, U Loss=0.1029, LR=0.012381]
+04/24/2025 11:45:04 - INFO - root -   Epoch 125: Val Loss: 0.4372, Val Acc: 79.60%, ship Val Acc: 67.20%, truck Val Acc: 92.00%, Test Loss: 0.4261, Test Acc: 83.50%
+Epoch 126/150: 100%|██████████| 7/7 [00:05<00:00,  1.28it/s, Loss=0.1026, L Loss=0.0060, U Loss=0.0966, LR=0.012130]
+04/24/2025 11:45:11 - INFO - root -   Epoch 126: Val Loss: 0.4261, Val Acc: 81.60%, ship Val Acc: 71.60%, truck Val Acc: 91.60%, Test Loss: 0.4263, Test Acc: 82.55%
+04/24/2025 11:45:11 - INFO - root -   Saved best EMA model at epoch 126 with Val Acc: 81.60%
+Epoch 127/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.1023, L Loss=0.0070, U Loss=0.0953, LR=0.011878]
+04/24/2025 11:45:18 - INFO - root -   Epoch 127: Val Loss: 0.4270, Val Acc: 82.20%, ship Val Acc: 72.40%, truck Val Acc: 92.00%, Test Loss: 0.4188, Test Acc: 83.70%
+04/24/2025 11:45:18 - INFO - root -   Saved best EMA model at epoch 127 with Val Acc: 82.20%
+Epoch 128/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.0877, L Loss=0.0022, U Loss=0.0855, LR=0.011625]
+04/24/2025 11:45:25 - INFO - root -   Epoch 128: Val Loss: 0.4216, Val Acc: 82.00%, ship Val Acc: 72.40%, truck Val Acc: 91.60%, Test Loss: 0.4195, Test Acc: 82.65%
+Epoch 129/150: 100%|██████████| 7/7 [00:06<00:00,  1.13it/s, Loss=0.0890, L Loss=0.0019, U Loss=0.0871, LR=0.011372]
+04/24/2025 11:45:32 - INFO - root -   Epoch 129: Val Loss: 0.4206, Val Acc: 81.20%, ship Val Acc: 71.60%, truck Val Acc: 90.80%, Test Loss: 0.4132, Test Acc: 84.25%
+Epoch 130/150: 100%|██████████| 7/7 [00:05<00:00,  1.30it/s, Loss=0.0858, L Loss=0.0021, U Loss=0.0836, LR=0.011117]
+04/24/2025 11:45:39 - INFO - root -   Epoch 130: Val Loss: 0.4179, Val Acc: 82.40%, ship Val Acc: 75.60%, truck Val Acc: 89.20%, Test Loss: 0.4136, Test Acc: 83.65%
+04/24/2025 11:45:39 - INFO - root -   Saved best EMA model at epoch 130 with Val Acc: 82.40%
+Epoch 131/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0980, L Loss=0.0031, U Loss=0.0949, LR=0.010861]
+04/24/2025 11:45:46 - INFO - root -   Epoch 131: Val Loss: 0.4091, Val Acc: 84.00%, ship Val Acc: 76.00%, truck Val Acc: 92.00%, Test Loss: 0.4073, Test Acc: 85.55%
+04/24/2025 11:45:46 - INFO - root -   Saved best EMA model at epoch 131 with Val Acc: 84.00%
+Epoch 132/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.0934, L Loss=0.0012, U Loss=0.0922, LR=0.010604]
+04/24/2025 11:45:53 - INFO - root -   Epoch 132: Val Loss: 0.4118, Val Acc: 82.20%, ship Val Acc: 74.00%, truck Val Acc: 90.40%, Test Loss: 0.4030, Test Acc: 84.75%
+Epoch 133/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.1048, L Loss=0.0045, U Loss=0.1003, LR=0.010347]
+04/24/2025 11:46:00 - INFO - root -   Epoch 133: Val Loss: 0.4098, Val Acc: 83.00%, ship Val Acc: 75.20%, truck Val Acc: 90.80%, Test Loss: 0.4048, Test Acc: 85.10%
+Epoch 134/150: 100%|██████████| 7/7 [00:05<00:00,  1.31it/s, Loss=0.0903, L Loss=0.0025, U Loss=0.0878, LR=0.010088]
+04/24/2025 11:46:07 - INFO - root -   Epoch 134: Val Loss: 0.4024, Val Acc: 83.00%, ship Val Acc: 76.00%, truck Val Acc: 90.00%, Test Loss: 0.3971, Test Acc: 85.40%
+Epoch 135/150: 100%|██████████| 7/7 [00:05<00:00,  1.28it/s, Loss=0.0914, L Loss=0.0045, U Loss=0.0869, LR=0.009829]
+04/24/2025 11:46:14 - INFO - root -   Epoch 135: Val Loss: 0.3991, Val Acc: 83.20%, ship Val Acc: 76.80%, truck Val Acc: 89.60%, Test Loss: 0.3954, Test Acc: 85.50%
+Epoch 136/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.0886, L Loss=0.0022, U Loss=0.0864, LR=0.009569]
+04/24/2025 11:46:20 - INFO - root -   Epoch 136: Val Loss: 0.4015, Val Acc: 83.60%, ship Val Acc: 78.00%, truck Val Acc: 89.20%, Test Loss: 0.3968, Test Acc: 86.10%
+Epoch 137/150: 100%|██████████| 7/7 [00:05<00:00,  1.30it/s, Loss=0.0990, L Loss=0.0034, U Loss=0.0956, LR=0.009308]
+04/24/2025 11:46:27 - INFO - root -   Epoch 137: Val Loss: 0.3927, Val Acc: 82.80%, ship Val Acc: 76.40%, truck Val Acc: 89.20%, Test Loss: 0.3905, Test Acc: 85.60%
+Epoch 138/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1013, L Loss=0.0024, U Loss=0.0989, LR=0.009046]
+04/24/2025 11:46:34 - INFO - root -   Epoch 138: Val Loss: 0.3972, Val Acc: 83.80%, ship Val Acc: 78.00%, truck Val Acc: 89.60%, Test Loss: 0.3873, Test Acc: 86.30%
+Epoch 139/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.0863, L Loss=0.0013, U Loss=0.0850, LR=0.008784]
+04/24/2025 11:46:41 - INFO - root -   Epoch 139: Val Loss: 0.3907, Val Acc: 83.00%, ship Val Acc: 76.40%, truck Val Acc: 89.60%, Test Loss: 0.3825, Test Acc: 86.55%
+Epoch 140/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.0980, L Loss=0.0048, U Loss=0.0932, LR=0.008520]
+04/24/2025 11:46:48 - INFO - root -   Epoch 140: Val Loss: 0.3864, Val Acc: 84.20%, ship Val Acc: 79.20%, truck Val Acc: 89.20%, Test Loss: 0.3806, Test Acc: 87.00%
+04/24/2025 11:46:48 - INFO - root -   Saved best EMA model at epoch 140 with Val Acc: 84.20%
+Epoch 141/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.0913, L Loss=0.0017, U Loss=0.0896, LR=0.008257]
+04/24/2025 11:46:55 - INFO - root -   Epoch 141: Val Loss: 0.3819, Val Acc: 84.40%, ship Val Acc: 79.60%, truck Val Acc: 89.20%, Test Loss: 0.3798, Test Acc: 86.90%
+04/24/2025 11:46:55 - INFO - root -   Saved best EMA model at epoch 141 with Val Acc: 84.40%
+Epoch 142/150: 100%|██████████| 7/7 [00:05<00:00,  1.24it/s, Loss=0.0911, L Loss=0.0013, U Loss=0.0897, LR=0.007992]
+04/24/2025 11:47:02 - INFO - root -   Epoch 142: Val Loss: 0.3807, Val Acc: 84.20%, ship Val Acc: 80.00%, truck Val Acc: 88.40%, Test Loss: 0.3694, Test Acc: 87.45%
+Epoch 143/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.1041, L Loss=0.0025, U Loss=0.1016, LR=0.007727]
+04/24/2025 11:47:09 - INFO - root -   Epoch 143: Val Loss: 0.3825, Val Acc: 84.20%, ship Val Acc: 79.20%, truck Val Acc: 89.20%, Test Loss: 0.3733, Test Acc: 86.90%
+Epoch 144/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.0825, L Loss=0.0024, U Loss=0.0802, LR=0.007461]
+04/24/2025 11:47:16 - INFO - root -   Epoch 144: Val Loss: 0.3770, Val Acc: 85.40%, ship Val Acc: 81.20%, truck Val Acc: 89.60%, Test Loss: 0.3674, Test Acc: 87.30%
+04/24/2025 11:47:16 - INFO - root -   Saved best EMA model at epoch 144 with Val Acc: 85.40%
+Epoch 145/150: 100%|██████████| 7/7 [00:05<00:00,  1.29it/s, Loss=0.0870, L Loss=0.0041, U Loss=0.0830, LR=0.007194]
+04/24/2025 11:47:23 - INFO - root -   Epoch 145: Val Loss: 0.3764, Val Acc: 84.80%, ship Val Acc: 79.60%, truck Val Acc: 90.00%, Test Loss: 0.3633, Test Acc: 87.80%
+Epoch 146/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.0942, L Loss=0.0076, U Loss=0.0866, LR=0.006927]
+04/24/2025 11:47:30 - INFO - root -   Epoch 146: Val Loss: 0.3656, Val Acc: 85.20%, ship Val Acc: 80.80%, truck Val Acc: 89.60%, Test Loss: 0.3629, Test Acc: 87.55%
+Epoch 147/150: 100%|██████████| 7/7 [00:05<00:00,  1.26it/s, Loss=0.0911, L Loss=0.0026, U Loss=0.0885, LR=0.006659]
+04/24/2025 11:47:37 - INFO - root -   Epoch 147: Val Loss: 0.3687, Val Acc: 85.60%, ship Val Acc: 82.00%, truck Val Acc: 89.20%, Test Loss: 0.3633, Test Acc: 87.85%
+04/24/2025 11:47:37 - INFO - root -   Saved best EMA model at epoch 147 with Val Acc: 85.60%
+Epoch 148/150: 100%|██████████| 7/7 [00:05<00:00,  1.27it/s, Loss=0.1035, L Loss=0.0035, U Loss=0.1000, LR=0.006391]
+04/24/2025 11:47:44 - INFO - root -   Epoch 148: Val Loss: 0.3650, Val Acc: 84.80%, ship Val Acc: 82.00%, truck Val Acc: 87.60%, Test Loss: 0.3632, Test Acc: 87.65%
+Epoch 149/150: 100%|██████████| 7/7 [00:05<00:00,  1.25it/s, Loss=0.0890, L Loss=0.0016, U Loss=0.0875, LR=0.006122]
+04/24/2025 11:47:51 - INFO - root -   Epoch 149: Val Loss: 0.3635, Val Acc: 85.20%, ship Val Acc: 83.60%, truck Val Acc: 86.80%, Test Loss: 0.3583, Test Acc: 87.10%
+Epoch 150/150: 100%|██████████| 7/7 [00:05<00:00,  1.30it/s, Loss=0.0895, L Loss=0.0018, U Loss=0.0878, LR=0.005853]
+04/24/2025 11:47:58 - INFO - root -   Epoch 150: Val Loss: 0.3621, Val Acc: 85.60%, ship Val Acc: 84.00%, truck Val Acc: 87.20%, Test Loss: 0.3579, Test Acc: 88.45%
+ 
+04/24/2025 11:47:59 - INFO - root -   Final Test Loss: 0.3544, Test Acc: 88.25%, ship Test Acc: 86.80%, truck Test Acc: 89.70%
+
+Process finished with exit code 0

@@ -1,0 +1,608 @@
+ 
+Labeled set: 500 samples
+Unlabeled set: 23998 samples
+Validation set: 500 samples
+Test set: 2000 samples
+Epoch 1/300: 100%|██████████| 7/7 [02:07<00:00, 18.23s/it, Loss=0.6944, L Loss=0.6944, U Loss=0.0000, LR=0.030000]
+04/20/2025 16:44:41 - INFO - root -   Epoch 1: Val Loss: 1.2267, Val Acc: 49.80%, Test Loss: 1.2171, Test Acc: 49.75%
+Epoch 2/300: 100%|██████████| 7/7 [02:05<00:00, 17.91s/it, Loss=0.6789, L Loss=0.6789, U Loss=0.0000, LR=0.029999]
+04/20/2025 16:47:15 - INFO - root -   Epoch 2: Val Loss: 1.1611, Val Acc: 50.00%, Test Loss: 1.1327, Test Acc: 50.00%
+Epoch 3/300: 100%|██████████| 7/7 [02:03<00:00, 17.69s/it, Loss=0.6373, L Loss=0.6370, U Loss=0.0003, LR=0.029997]
+04/20/2025 16:49:49 - INFO - root -   Epoch 3: Val Loss: 1.0543, Val Acc: 50.00%, Test Loss: 1.0305, Test Acc: 50.05%
+Epoch 4/300: 100%|██████████| 7/7 [02:05<00:00, 17.88s/it, Loss=0.6566, L Loss=0.6549, U Loss=0.0018, LR=0.029995]
+04/20/2025 16:52:24 - INFO - root -   Epoch 4: Val Loss: 0.9551, Val Acc: 49.60%, Test Loss: 0.9409, Test Acc: 50.40%
+Epoch 5/300: 100%|██████████| 7/7 [02:00<00:00, 17.22s/it, Loss=0.6430, L Loss=0.6420, U Loss=0.0010, LR=0.029992]
+04/20/2025 16:54:53 - INFO - root -   Epoch 5: Val Loss: 0.8913, Val Acc: 48.40%, Test Loss: 0.8767, Test Acc: 49.70%
+Epoch 6/300: 100%|██████████| 7/7 [02:03<00:00, 17.69s/it, Loss=0.6312, L Loss=0.6285, U Loss=0.0027, LR=0.029989]
+04/20/2025 16:57:27 - INFO - root -   Epoch 6: Val Loss: 0.8236, Val Acc: 49.20%, Test Loss: 0.8144, Test Acc: 50.45%
+Epoch 7/300: 100%|██████████| 7/7 [01:54<00:00, 16.38s/it, Loss=0.6240, L Loss=0.6214, U Loss=0.0026, LR=0.029985]
+04/20/2025 16:59:48 - INFO - root -   Epoch 7: Val Loss: 0.7778, Val Acc: 52.80%, Test Loss: 0.7721, Test Acc: 50.70%
+Epoch 8/300: 100%|██████████| 7/7 [01:58<00:00, 16.98s/it, Loss=0.6176, L Loss=0.6143, U Loss=0.0033, LR=0.029980]
+04/20/2025 17:02:14 - INFO - root -   Epoch 8: Val Loss: 0.7295, Val Acc: 52.20%, Test Loss: 0.7490, Test Acc: 52.10%
+Epoch 9/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.6044, L Loss=0.6013, U Loss=0.0031, LR=0.029975]
+04/20/2025 17:04:36 - INFO - root -   Epoch 9: Val Loss: 0.7312, Val Acc: 50.80%, Test Loss: 0.7319, Test Acc: 50.35%
+Epoch 10/300: 100%|██████████| 7/7 [01:53<00:00, 16.26s/it, Loss=0.5851, L Loss=0.5804, U Loss=0.0047, LR=0.029969]
+04/20/2025 17:06:58 - INFO - root -   Epoch 10: Val Loss: 0.7119, Val Acc: 50.40%, Test Loss: 0.7141, Test Acc: 51.60%
+Epoch 11/300: 100%|██████████| 7/7 [01:53<00:00, 16.24s/it, Loss=0.5794, L Loss=0.5712, U Loss=0.0082, LR=0.029962]
+04/20/2025 17:09:19 - INFO - root -   Epoch 11: Val Loss: 0.6937, Val Acc: 55.40%, Test Loss: 0.7149, Test Acc: 51.40%
+Epoch 12/300: 100%|██████████| 7/7 [01:52<00:00, 16.13s/it, Loss=0.5713, L Loss=0.5668, U Loss=0.0046, LR=0.029955]
+04/20/2025 17:11:38 - INFO - root -   Epoch 12: Val Loss: 0.7045, Val Acc: 52.20%, Test Loss: 0.7173, Test Acc: 51.40%
+Epoch 13/300: 100%|██████████| 7/7 [01:52<00:00, 16.07s/it, Loss=0.5447, L Loss=0.5359, U Loss=0.0089, LR=0.029947]
+04/20/2025 17:13:57 - INFO - root -   Epoch 13: Val Loss: 0.7216, Val Acc: 50.20%, Test Loss: 0.7242, Test Acc: 51.20%
+Epoch 14/300: 100%|██████████| 7/7 [01:52<00:00, 16.13s/it, Loss=0.5540, L Loss=0.5352, U Loss=0.0189, LR=0.029938]
+04/20/2025 17:16:16 - INFO - root -   Epoch 14: Val Loss: 0.7426, Val Acc: 48.60%, Test Loss: 0.7456, Test Acc: 51.45%
+Epoch 15/300: 100%|██████████| 7/7 [01:53<00:00, 16.26s/it, Loss=0.5719, L Loss=0.5632, U Loss=0.0088, LR=0.029929]
+04/20/2025 17:18:38 - INFO - root -   Epoch 15: Val Loss: 0.7507, Val Acc: 50.00%, Test Loss: 0.7573, Test Acc: 50.50%
+Epoch 16/300: 100%|██████████| 7/7 [01:52<00:00, 16.03s/it, Loss=0.5724, L Loss=0.5608, U Loss=0.0116, LR=0.029919]
+04/20/2025 17:20:56 - INFO - root -   Epoch 16: Val Loss: 0.7693, Val Acc: 50.20%, Test Loss: 0.7735, Test Acc: 50.35%
+Epoch 17/300: 100%|██████████| 7/7 [01:53<00:00, 16.14s/it, Loss=0.5362, L Loss=0.5262, U Loss=0.0100, LR=0.029909]
+04/20/2025 17:23:15 - INFO - root -   Epoch 17: Val Loss: 0.7793, Val Acc: 50.20%, Test Loss: 0.7890, Test Acc: 50.05%
+Epoch 18/300: 100%|██████████| 7/7 [01:52<00:00, 16.04s/it, Loss=0.5129, L Loss=0.4945, U Loss=0.0185, LR=0.029898]
+04/20/2025 17:25:35 - INFO - root -   Epoch 18: Val Loss: 0.8060, Val Acc: 50.20%, Test Loss: 0.8109, Test Acc: 50.55%
+Epoch 19/300: 100%|██████████| 7/7 [01:52<00:00, 16.06s/it, Loss=0.5138, L Loss=0.4885, U Loss=0.0253, LR=0.029886]
+04/20/2025 17:27:54 - INFO - root -   Epoch 19: Val Loss: 0.8233, Val Acc: 50.20%, Test Loss: 0.8268, Test Acc: 50.55%
+Epoch 20/300: 100%|██████████| 7/7 [01:56<00:00, 16.61s/it, Loss=0.4948, L Loss=0.4730, U Loss=0.0219, LR=0.029874]
+04/20/2025 17:30:18 - INFO - root -   Epoch 20: Val Loss: 0.8373, Val Acc: 50.40%, Test Loss: 0.8495, Test Acc: 50.10%
+Epoch 21/300: 100%|██████████| 7/7 [01:57<00:00, 16.78s/it, Loss=0.5237, L Loss=0.4852, U Loss=0.0385, LR=0.029861]
+04/20/2025 17:32:44 - INFO - root -   Epoch 21: Val Loss: 0.8634, Val Acc: 50.20%, Test Loss: 0.8604, Test Acc: 50.00%
+Epoch 22/300: 100%|██████████| 7/7 [01:53<00:00, 16.17s/it, Loss=0.5564, L Loss=0.5371, U Loss=0.0192, LR=0.029848]
+04/20/2025 17:35:03 - INFO - root -   Epoch 22: Val Loss: 0.8672, Val Acc: 50.20%, Test Loss: 0.8757, Test Acc: 49.95%
+Epoch 23/300: 100%|██████████| 7/7 [01:54<00:00, 16.29s/it, Loss=0.4833, L Loss=0.4673, U Loss=0.0160, LR=0.029834]
+04/20/2025 17:37:24 - INFO - root -   Epoch 23: Val Loss: 0.8802, Val Acc: 50.20%, Test Loss: 0.8792, Test Acc: 50.00%
+Epoch 24/300: 100%|██████████| 7/7 [01:54<00:00, 16.34s/it, Loss=0.4899, L Loss=0.4615, U Loss=0.0283, LR=0.029819]
+04/20/2025 17:39:45 - INFO - root -   Epoch 24: Val Loss: 0.8882, Val Acc: 50.20%, Test Loss: 0.8933, Test Acc: 50.15%
+Epoch 25/300: 100%|██████████| 7/7 [01:57<00:00, 16.81s/it, Loss=0.4388, L Loss=0.3994, U Loss=0.0394, LR=0.029803]
+04/20/2025 17:42:11 - INFO - root -   Epoch 25: Val Loss: 0.9045, Val Acc: 50.00%, Test Loss: 0.9013, Test Acc: 50.10%
+Epoch 26/300: 100%|██████████| 7/7 [01:55<00:00, 16.47s/it, Loss=0.4684, L Loss=0.4095, U Loss=0.0589, LR=0.029787]
+04/20/2025 17:44:35 - INFO - root -   Epoch 26: Val Loss: 0.9156, Val Acc: 50.20%, Test Loss: 0.9084, Test Acc: 50.15%
+Epoch 27/300: 100%|██████████| 7/7 [01:55<00:00, 16.48s/it, Loss=0.4622, L Loss=0.4084, U Loss=0.0538, LR=0.029771]
+04/20/2025 17:46:59 - INFO - root -   Epoch 27: Val Loss: 0.9332, Val Acc: 50.00%, Test Loss: 0.9128, Test Acc: 50.20%
+Epoch 28/300: 100%|██████████| 7/7 [01:57<00:00, 16.79s/it, Loss=0.4486, L Loss=0.4056, U Loss=0.0430, LR=0.029753]
+04/20/2025 17:49:23 - INFO - root -   Epoch 28: Val Loss: 0.9165, Val Acc: 50.40%, Test Loss: 0.9229, Test Acc: 50.20%
+Epoch 29/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.4635, L Loss=0.4122, U Loss=0.0512, LR=0.029736]
+04/20/2025 17:51:46 - INFO - root -   Epoch 29: Val Loss: 0.9140, Val Acc: 50.20%, Test Loss: 0.9230, Test Acc: 50.05%
+Epoch 30/300: 100%|██████████| 7/7 [01:54<00:00, 16.31s/it, Loss=0.4427, L Loss=0.3885, U Loss=0.0542, LR=0.029717]
+04/20/2025 17:54:06 - INFO - root -   Epoch 30: Val Loss: 0.9264, Val Acc: 49.80%, Test Loss: 0.9262, Test Acc: 50.35%
+Epoch 31/300: 100%|██████████| 7/7 [01:57<00:00, 16.78s/it, Loss=0.4801, L Loss=0.4171, U Loss=0.0631, LR=0.029698]
+04/20/2025 17:56:31 - INFO - root -   Epoch 31: Val Loss: 0.9431, Val Acc: 50.00%, Test Loss: 0.9261, Test Acc: 50.10%
+Epoch 32/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.4271, L Loss=0.3544, U Loss=0.0728, LR=0.029678]
+04/20/2025 17:58:53 - INFO - root -   Epoch 32: Val Loss: 0.9325, Val Acc: 50.20%, Test Loss: 0.9273, Test Acc: 50.20%
+Epoch 33/300: 100%|██████████| 7/7 [01:52<00:00, 16.01s/it, Loss=0.4845, L Loss=0.4088, U Loss=0.0757, LR=0.029658]
+04/20/2025 18:01:11 - INFO - root -   Epoch 33: Val Loss: 0.9292, Val Acc: 50.20%, Test Loss: 0.9250, Test Acc: 50.05%
+Epoch 34/300: 100%|██████████| 7/7 [01:53<00:00, 16.18s/it, Loss=0.4691, L Loss=0.4063, U Loss=0.0628, LR=0.029637]
+04/20/2025 18:03:32 - INFO - root -   Epoch 34: Val Loss: 0.9380, Val Acc: 50.40%, Test Loss: 0.9223, Test Acc: 50.50%
+Epoch 35/300: 100%|██████████| 7/7 [01:51<00:00, 15.96s/it, Loss=0.4231, L Loss=0.3521, U Loss=0.0710, LR=0.029615]
+04/20/2025 18:05:52 - INFO - root -   Epoch 35: Val Loss: 0.9393, Val Acc: 50.00%, Test Loss: 0.9201, Test Acc: 50.45%
+Epoch 36/300: 100%|██████████| 7/7 [01:52<00:00, 16.04s/it, Loss=0.4077, L Loss=0.3343, U Loss=0.0734, LR=0.029593]
+04/20/2025 18:08:10 - INFO - root -   Epoch 36: Val Loss: 0.9261, Val Acc: 50.80%, Test Loss: 0.9140, Test Acc: 50.15%
+Epoch 37/300: 100%|██████████| 7/7 [01:52<00:00, 16.02s/it, Loss=0.4028, L Loss=0.2931, U Loss=0.1097, LR=0.029570]
+04/20/2025 18:10:28 - INFO - root -   Epoch 37: Val Loss: 0.9241, Val Acc: 49.80%, Test Loss: 0.9068, Test Acc: 50.35%
+Epoch 38/300: 100%|██████████| 7/7 [01:52<00:00, 16.00s/it, Loss=0.4055, L Loss=0.2953, U Loss=0.1103, LR=0.029547]
+04/20/2025 18:12:48 - INFO - root -   Epoch 38: Val Loss: 0.9085, Val Acc: 50.60%, Test Loss: 0.9034, Test Acc: 50.55%
+Epoch 39/300: 100%|██████████| 7/7 [01:51<00:00, 15.87s/it, Loss=0.4310, L Loss=0.2994, U Loss=0.1315, LR=0.029522]
+04/20/2025 18:15:05 - INFO - root -   Epoch 39: Val Loss: 0.9083, Val Acc: 50.60%, Test Loss: 0.8972, Test Acc: 50.35%
+Epoch 40/300: 100%|██████████| 7/7 [01:52<00:00, 16.04s/it, Loss=0.3863, L Loss=0.2594, U Loss=0.1269, LR=0.029498]
+04/20/2025 18:17:24 - INFO - root -   Epoch 40: Val Loss: 0.8978, Val Acc: 50.80%, Test Loss: 0.8933, Test Acc: 50.95%
+Epoch 41/300: 100%|██████████| 7/7 [01:51<00:00, 15.95s/it, Loss=0.4244, L Loss=0.2996, U Loss=0.1249, LR=0.029472]
+04/20/2025 18:19:43 - INFO - root -   Epoch 41: Val Loss: 0.8983, Val Acc: 51.20%, Test Loss: 0.8896, Test Acc: 50.45%
+Epoch 42/300: 100%|██████████| 7/7 [01:51<00:00, 15.92s/it, Loss=0.4171, L Loss=0.2845, U Loss=0.1326, LR=0.029446]
+04/20/2025 18:22:01 - INFO - root -   Epoch 42: Val Loss: 0.8906, Val Acc: 50.20%, Test Loss: 0.8813, Test Acc: 50.70%
+Epoch 43/300: 100%|██████████| 7/7 [01:52<00:00, 16.10s/it, Loss=0.3956, L Loss=0.2775, U Loss=0.1181, LR=0.029420]
+04/20/2025 18:24:20 - INFO - root -   Epoch 43: Val Loss: 0.8889, Val Acc: 51.00%, Test Loss: 0.8788, Test Acc: 51.05%
+Epoch 44/300: 100%|██████████| 7/7 [01:52<00:00, 16.14s/it, Loss=0.3412, L Loss=0.2114, U Loss=0.1298, LR=0.029393]
+04/20/2025 18:26:41 - INFO - root -   Epoch 44: Val Loss: 0.8791, Val Acc: 50.20%, Test Loss: 0.8713, Test Acc: 51.20%
+Epoch 45/300: 100%|██████████| 7/7 [01:52<00:00, 16.03s/it, Loss=0.3760, L Loss=0.2218, U Loss=0.1543, LR=0.029365]
+04/20/2025 18:29:01 - INFO - root -   Epoch 45: Val Loss: 0.8670, Val Acc: 50.40%, Test Loss: 0.8632, Test Acc: 51.45%
+Epoch 46/300: 100%|██████████| 7/7 [01:54<00:00, 16.32s/it, Loss=0.4106, L Loss=0.2649, U Loss=0.1457, LR=0.029336]
+04/20/2025 18:31:23 - INFO - root -   Epoch 46: Val Loss: 0.8694, Val Acc: 50.60%, Test Loss: 0.8486, Test Acc: 52.60%
+Epoch 47/300: 100%|██████████| 7/7 [01:52<00:00, 16.13s/it, Loss=0.4261, L Loss=0.2802, U Loss=0.1460, LR=0.029307]
+04/20/2025 18:33:44 - INFO - root -   Epoch 47: Val Loss: 0.8668, Val Acc: 50.00%, Test Loss: 0.8437, Test Acc: 51.65%
+Epoch 48/300: 100%|██████████| 7/7 [01:51<00:00, 15.93s/it, Loss=0.3834, L Loss=0.2462, U Loss=0.1372, LR=0.029278]
+04/20/2025 18:36:03 - INFO - root -   Epoch 48: Val Loss: 0.8607, Val Acc: 51.00%, Test Loss: 0.8340, Test Acc: 51.95%
+Epoch 49/300: 100%|██████████| 7/7 [01:51<00:00, 15.90s/it, Loss=0.3704, L Loss=0.2312, U Loss=0.1392, LR=0.029247]
+04/20/2025 18:38:20 - INFO - root -   Epoch 49: Val Loss: 0.8428, Val Acc: 49.40%, Test Loss: 0.8267, Test Acc: 52.10%
+Epoch 50/300: 100%|██████████| 7/7 [01:52<00:00, 16.02s/it, Loss=0.4138, L Loss=0.2889, U Loss=0.1249, LR=0.029216]
+04/20/2025 18:40:39 - INFO - root -   Epoch 50: Val Loss: 0.8367, Val Acc: 49.80%, Test Loss: 0.8190, Test Acc: 52.15%
+Epoch 51/300: 100%|██████████| 7/7 [01:52<00:00, 16.03s/it, Loss=0.3529, L Loss=0.2057, U Loss=0.1472, LR=0.029185]
+04/20/2025 18:42:59 - INFO - root -   Epoch 51: Val Loss: 0.8249, Val Acc: 49.80%, Test Loss: 0.8088, Test Acc: 53.15%
+Epoch 52/300: 100%|██████████| 7/7 [01:52<00:00, 16.10s/it, Loss=0.3543, L Loss=0.2008, U Loss=0.1534, LR=0.029153]
+04/20/2025 18:45:17 - INFO - root -   Epoch 52: Val Loss: 0.8217, Val Acc: 50.00%, Test Loss: 0.7975, Test Acc: 52.90%
+Epoch 53/300: 100%|██████████| 7/7 [01:53<00:00, 16.28s/it, Loss=0.3284, L Loss=0.1791, U Loss=0.1494, LR=0.029120]
+04/20/2025 18:47:39 - INFO - root -   Epoch 53: Val Loss: 0.8134, Val Acc: 50.20%, Test Loss: 0.7942, Test Acc: 53.60%
+Epoch 54/300: 100%|██████████| 7/7 [01:52<00:00, 16.03s/it, Loss=0.4308, L Loss=0.2433, U Loss=0.1875, LR=0.029087]
+04/20/2025 18:49:59 - INFO - root -   Epoch 54: Val Loss: 0.7978, Val Acc: 50.60%, Test Loss: 0.7784, Test Acc: 53.90%
+Epoch 55/300: 100%|██████████| 7/7 [01:54<00:00, 16.36s/it, Loss=0.4036, L Loss=0.2754, U Loss=0.1282, LR=0.029053]
+04/20/2025 18:52:19 - INFO - root -   Epoch 55: Val Loss: 0.7934, Val Acc: 51.00%, Test Loss: 0.7761, Test Acc: 53.80%
+Epoch 56/300: 100%|██████████| 7/7 [01:53<00:00, 16.28s/it, Loss=0.3215, L Loss=0.1787, U Loss=0.1427, LR=0.029018]
+04/20/2025 18:54:40 - INFO - root -   Epoch 56: Val Loss: 0.7893, Val Acc: 51.20%, Test Loss: 0.7678, Test Acc: 53.70%
+Epoch 57/300: 100%|██████████| 7/7 [01:52<00:00, 16.10s/it, Loss=0.4032, L Loss=0.2079, U Loss=0.1953, LR=0.028983]
+04/20/2025 18:56:59 - INFO - root -   Epoch 57: Val Loss: 0.7893, Val Acc: 49.20%, Test Loss: 0.7633, Test Acc: 54.45%
+Epoch 58/300: 100%|██████████| 7/7 [01:53<00:00, 16.18s/it, Loss=0.3470, L Loss=0.1897, U Loss=0.1573, LR=0.028947]
+04/20/2025 18:59:19 - INFO - root -   Epoch 58: Val Loss: 0.7759, Val Acc: 50.40%, Test Loss: 0.7555, Test Acc: 54.05%
+Epoch 59/300: 100%|██████████| 7/7 [01:53<00:00, 16.19s/it, Loss=0.3863, L Loss=0.2005, U Loss=0.1858, LR=0.028911]
+04/20/2025 19:01:40 - INFO - root -   Epoch 59: Val Loss: 0.7640, Val Acc: 52.40%, Test Loss: 0.7434, Test Acc: 54.50%
+Epoch 60/300: 100%|██████████| 7/7 [01:52<00:00, 16.10s/it, Loss=0.3564, L Loss=0.1987, U Loss=0.1577, LR=0.028874]
+04/20/2025 19:03:59 - INFO - root -   Epoch 60: Val Loss: 0.7582, Val Acc: 51.80%, Test Loss: 0.7392, Test Acc: 54.80%
+Epoch 61/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.3269, L Loss=0.1733, U Loss=0.1536, LR=0.028836]
+04/20/2025 19:06:20 - INFO - root -   Epoch 61: Val Loss: 0.7518, Val Acc: 53.60%, Test Loss: 0.7372, Test Acc: 54.95%
+Epoch 62/300: 100%|██████████| 7/7 [01:52<00:00, 16.02s/it, Loss=0.3254, L Loss=0.1372, U Loss=0.1882, LR=0.028798]
+04/20/2025 19:08:40 - INFO - root -   Epoch 62: Val Loss: 0.7545, Val Acc: 52.20%, Test Loss: 0.7292, Test Acc: 55.55%
+Epoch 63/300: 100%|██████████| 7/7 [01:53<00:00, 16.25s/it, Loss=0.3441, L Loss=0.1571, U Loss=0.1869, LR=0.028759]
+04/20/2025 19:10:59 - INFO - root -   Epoch 63: Val Loss: 0.7535, Val Acc: 52.60%, Test Loss: 0.7256, Test Acc: 55.50%
+Epoch 64/300: 100%|██████████| 7/7 [01:54<00:00, 16.36s/it, Loss=0.3442, L Loss=0.1503, U Loss=0.1939, LR=0.028720]
+04/20/2025 19:13:20 - INFO - root -   Epoch 64: Val Loss: 0.7442, Val Acc: 52.80%, Test Loss: 0.7169, Test Acc: 56.30%
+Epoch 65/300: 100%|██████████| 7/7 [01:53<00:00, 16.26s/it, Loss=0.3112, L Loss=0.1286, U Loss=0.1825, LR=0.028680]
+04/20/2025 19:15:42 - INFO - root -   Epoch 65: Val Loss: 0.7352, Val Acc: 52.40%, Test Loss: 0.7123, Test Acc: 55.75%
+Epoch 66/300: 100%|██████████| 7/7 [01:51<00:00, 15.97s/it, Loss=0.3123, L Loss=0.1224, U Loss=0.1899, LR=0.028639]
+04/20/2025 19:18:01 - INFO - root -   Epoch 66: Val Loss: 0.7433, Val Acc: 53.60%, Test Loss: 0.7067, Test Acc: 56.35%
+Epoch 67/300: 100%|██████████| 7/7 [01:54<00:00, 16.29s/it, Loss=0.3196, L Loss=0.1341, U Loss=0.1855, LR=0.028598]
+04/20/2025 19:20:21 - INFO - root -   Epoch 67: Val Loss: 0.7354, Val Acc: 54.00%, Test Loss: 0.7065, Test Acc: 56.30%
+Epoch 68/300: 100%|██████████| 7/7 [02:03<00:00, 17.57s/it, Loss=0.3115, L Loss=0.1332, U Loss=0.1784, LR=0.028556]
+04/20/2025 19:22:53 - INFO - root -   Epoch 68: Val Loss: 0.7300, Val Acc: 53.20%, Test Loss: 0.7055, Test Acc: 55.95%
+Epoch 69/300: 100%|██████████| 7/7 [01:55<00:00, 16.46s/it, Loss=0.3397, L Loss=0.1375, U Loss=0.2022, LR=0.028513]
+04/20/2025 19:25:16 - INFO - root -   Epoch 69: Val Loss: 0.7217, Val Acc: 54.20%, Test Loss: 0.6974, Test Acc: 55.55%
+Epoch 70/300: 100%|██████████| 7/7 [01:58<00:00, 16.99s/it, Loss=0.3280, L Loss=0.1389, U Loss=0.1891, LR=0.028470]
+04/20/2025 19:27:46 - INFO - root -   Epoch 70: Val Loss: 0.7239, Val Acc: 55.00%, Test Loss: 0.6967, Test Acc: 56.15%
+Epoch 71/300: 100%|██████████| 7/7 [02:07<00:00, 18.16s/it, Loss=0.3333, L Loss=0.1350, U Loss=0.1982, LR=0.028427]
+04/20/2025 19:30:20 - INFO - root -   Epoch 71: Val Loss: 0.7205, Val Acc: 53.20%, Test Loss: 0.6929, Test Acc: 56.90%
+Epoch 72/300: 100%|██████████| 7/7 [01:58<00:00, 16.94s/it, Loss=0.3250, L Loss=0.1656, U Loss=0.1594, LR=0.028383]
+04/20/2025 19:32:47 - INFO - root -   Epoch 72: Val Loss: 0.7077, Val Acc: 54.00%, Test Loss: 0.6859, Test Acc: 57.60%
+Epoch 73/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.3200, L Loss=0.1410, U Loss=0.1790, LR=0.028338]
+04/20/2025 19:35:08 - INFO - root -   Epoch 73: Val Loss: 0.7171, Val Acc: 53.20%, Test Loss: 0.6850, Test Acc: 58.15%
+Epoch 74/300: 100%|██████████| 7/7 [01:52<00:00, 16.10s/it, Loss=0.3163, L Loss=0.1244, U Loss=0.1919, LR=0.028292]
+04/20/2025 19:37:27 - INFO - root -   Epoch 74: Val Loss: 0.7125, Val Acc: 55.20%, Test Loss: 0.6838, Test Acc: 58.15%
+Epoch 75/300: 100%|██████████| 7/7 [01:53<00:00, 16.28s/it, Loss=0.2993, L Loss=0.1251, U Loss=0.1742, LR=0.028246]
+04/20/2025 19:39:49 - INFO - root -   Epoch 75: Val Loss: 0.7104, Val Acc: 54.60%, Test Loss: 0.6782, Test Acc: 57.65%
+Epoch 76/300: 100%|██████████| 7/7 [01:54<00:00, 16.31s/it, Loss=0.3023, L Loss=0.1057, U Loss=0.1966, LR=0.028200]
+04/20/2025 19:42:10 - INFO - root -   Epoch 76: Val Loss: 0.7081, Val Acc: 54.20%, Test Loss: 0.6781, Test Acc: 58.45%
+Epoch 77/300: 100%|██████████| 7/7 [01:53<00:00, 16.23s/it, Loss=0.2867, L Loss=0.1067, U Loss=0.1800, LR=0.028153]
+04/20/2025 19:44:31 - INFO - root -   Epoch 77: Val Loss: 0.7060, Val Acc: 54.80%, Test Loss: 0.6721, Test Acc: 59.25%
+Epoch 78/300: 100%|██████████| 7/7 [01:53<00:00, 16.26s/it, Loss=0.3240, L Loss=0.1021, U Loss=0.2219, LR=0.028105]
+04/20/2025 19:46:53 - INFO - root -   Epoch 78: Val Loss: 0.6987, Val Acc: 55.80%, Test Loss: 0.6717, Test Acc: 58.65%
+Epoch 79/300: 100%|██████████| 7/7 [01:56<00:00, 16.68s/it, Loss=0.2700, L Loss=0.0889, U Loss=0.1811, LR=0.028056]
+04/20/2025 19:49:16 - INFO - root -   Epoch 79: Val Loss: 0.6939, Val Acc: 55.20%, Test Loss: 0.6705, Test Acc: 59.10%
+Epoch 80/300: 100%|██████████| 7/7 [01:54<00:00, 16.30s/it, Loss=0.3236, L Loss=0.1182, U Loss=0.2054, LR=0.028007]
+04/20/2025 19:51:37 - INFO - root -   Epoch 80: Val Loss: 0.7022, Val Acc: 53.60%, Test Loss: 0.6621, Test Acc: 60.20%
+Epoch 81/300: 100%|██████████| 7/7 [01:52<00:00, 16.14s/it, Loss=0.2669, L Loss=0.0710, U Loss=0.1959, LR=0.027958]
+04/20/2025 19:53:57 - INFO - root -   Epoch 81: Val Loss: 0.6907, Val Acc: 56.20%, Test Loss: 0.6628, Test Acc: 60.70%
+Epoch 82/300: 100%|██████████| 7/7 [01:55<00:00, 16.57s/it, Loss=0.2954, L Loss=0.0810, U Loss=0.2143, LR=0.027908]
+04/20/2025 19:56:20 - INFO - root -   Epoch 82: Val Loss: 0.6952, Val Acc: 55.40%, Test Loss: 0.6596, Test Acc: 60.10%
+Epoch 83/300: 100%|██████████| 7/7 [01:53<00:00, 16.15s/it, Loss=0.3144, L Loss=0.0942, U Loss=0.2202, LR=0.027857]
+04/20/2025 19:58:40 - INFO - root -   Epoch 83: Val Loss: 0.6912, Val Acc: 56.80%, Test Loss: 0.6598, Test Acc: 60.25%
+Epoch 84/300: 100%|██████████| 7/7 [01:53<00:00, 16.28s/it, Loss=0.2763, L Loss=0.0826, U Loss=0.1937, LR=0.027806]
+04/20/2025 20:01:01 - INFO - root -   Epoch 84: Val Loss: 0.6887, Val Acc: 57.00%, Test Loss: 0.6517, Test Acc: 61.55%
+Epoch 85/300: 100%|██████████| 7/7 [01:54<00:00, 16.39s/it, Loss=0.2590, L Loss=0.0571, U Loss=0.2019, LR=0.027754]
+04/20/2025 20:03:22 - INFO - root -   Epoch 85: Val Loss: 0.6917, Val Acc: 55.80%, Test Loss: 0.6501, Test Acc: 61.60%
+Epoch 86/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.2582, L Loss=0.0621, U Loss=0.1960, LR=0.027701]
+04/20/2025 20:05:45 - INFO - root -   Epoch 86: Val Loss: 0.6805, Val Acc: 57.60%, Test Loss: 0.6530, Test Acc: 61.30%
+Epoch 87/300: 100%|██████████| 7/7 [01:55<00:00, 16.53s/it, Loss=0.2959, L Loss=0.0878, U Loss=0.2081, LR=0.027648]
+04/20/2025 20:08:07 - INFO - root -   Epoch 87: Val Loss: 0.6818, Val Acc: 59.60%, Test Loss: 0.6491, Test Acc: 61.85%
+Epoch 88/300: 100%|██████████| 7/7 [01:53<00:00, 16.25s/it, Loss=0.3095, L Loss=0.1088, U Loss=0.2006, LR=0.027595]
+04/20/2025 20:10:28 - INFO - root -   Epoch 88: Val Loss: 0.6893, Val Acc: 55.40%, Test Loss: 0.6475, Test Acc: 61.35%
+Epoch 89/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.3582, L Loss=0.1206, U Loss=0.2376, LR=0.027540]
+04/20/2025 20:12:50 - INFO - root -   Epoch 89: Val Loss: 0.6798, Val Acc: 57.60%, Test Loss: 0.6442, Test Acc: 62.50%
+Epoch 90/300: 100%|██████████| 7/7 [01:54<00:00, 16.32s/it, Loss=0.2801, L Loss=0.1100, U Loss=0.1701, LR=0.027486]
+04/20/2025 20:15:11 - INFO - root -   Epoch 90: Val Loss: 0.6790, Val Acc: 58.00%, Test Loss: 0.6444, Test Acc: 61.60%
+Epoch 91/300: 100%|██████████| 7/7 [01:53<00:00, 16.23s/it, Loss=0.2731, L Loss=0.0891, U Loss=0.1840, LR=0.027430]
+04/20/2025 20:17:31 - INFO - root -   Epoch 91: Val Loss: 0.6743, Val Acc: 58.80%, Test Loss: 0.6432, Test Acc: 62.60%
+Epoch 92/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.2649, L Loss=0.0756, U Loss=0.1893, LR=0.027374]
+04/20/2025 20:19:54 - INFO - root -   Epoch 92: Val Loss: 0.6741, Val Acc: 58.80%, Test Loss: 0.6422, Test Acc: 63.10%
+Epoch 93/300: 100%|██████████| 7/7 [01:54<00:00, 16.34s/it, Loss=0.2856, L Loss=0.0615, U Loss=0.2242, LR=0.027318]
+04/20/2025 20:22:16 - INFO - root -   Epoch 93: Val Loss: 0.6781, Val Acc: 59.20%, Test Loss: 0.6415, Test Acc: 62.15%
+Epoch 94/300: 100%|██████████| 7/7 [01:54<00:00, 16.30s/it, Loss=0.2593, L Loss=0.0657, U Loss=0.1936, LR=0.027261]
+04/20/2025 20:24:37 - INFO - root -   Epoch 94: Val Loss: 0.6797, Val Acc: 57.00%, Test Loss: 0.6396, Test Acc: 63.45%
+Epoch 95/300: 100%|██████████| 7/7 [01:54<00:00, 16.40s/it, Loss=0.2814, L Loss=0.0701, U Loss=0.2113, LR=0.027203]
+04/20/2025 20:26:59 - INFO - root -   Epoch 95: Val Loss: 0.6699, Val Acc: 58.00%, Test Loss: 0.6355, Test Acc: 64.45%
+Epoch 96/300: 100%|██████████| 7/7 [01:54<00:00, 16.29s/it, Loss=0.2660, L Loss=0.0691, U Loss=0.1969, LR=0.027145]
+04/20/2025 20:29:19 - INFO - root -   Epoch 96: Val Loss: 0.6718, Val Acc: 60.00%, Test Loss: 0.6318, Test Acc: 64.95%
+Epoch 97/300: 100%|██████████| 7/7 [01:56<00:00, 16.63s/it, Loss=0.2392, L Loss=0.0588, U Loss=0.1803, LR=0.027086]
+04/20/2025 20:31:44 - INFO - root -   Epoch 97: Val Loss: 0.6688, Val Acc: 58.80%, Test Loss: 0.6326, Test Acc: 65.10%
+Epoch 98/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.2516, L Loss=0.0536, U Loss=0.1980, LR=0.027027]
+04/20/2025 20:34:09 - INFO - root -   Epoch 98: Val Loss: 0.6696, Val Acc: 60.20%, Test Loss: 0.6307, Test Acc: 65.20%
+Epoch 99/300: 100%|██████████| 7/7 [01:56<00:00, 16.61s/it, Loss=0.2533, L Loss=0.0583, U Loss=0.1950, LR=0.026967]
+04/20/2025 20:36:33 - INFO - root -   Epoch 99: Val Loss: 0.6650, Val Acc: 61.80%, Test Loss: 0.6293, Test Acc: 65.65%
+Epoch 100/300: 100%|██████████| 7/7 [02:02<00:00, 17.53s/it, Loss=0.2608, L Loss=0.0553, U Loss=0.2055, LR=0.026906]
+04/20/2025 20:39:06 - INFO - root -   Epoch 100: Val Loss: 0.6617, Val Acc: 60.60%, Test Loss: 0.6255, Test Acc: 65.25%
+Epoch 101/300: 100%|██████████| 7/7 [01:54<00:00, 16.36s/it, Loss=0.2532, L Loss=0.0592, U Loss=0.1940, LR=0.026845]
+04/20/2025 20:41:27 - INFO - root -   Epoch 101: Val Loss: 0.6652, Val Acc: 60.80%, Test Loss: 0.6243, Test Acc: 66.15%
+Epoch 102/300: 100%|██████████| 7/7 [01:53<00:00, 16.15s/it, Loss=0.2591, L Loss=0.0480, U Loss=0.2112, LR=0.026783]
+04/20/2025 20:43:47 - INFO - root -   Epoch 102: Val Loss: 0.6672, Val Acc: 61.20%, Test Loss: 0.6227, Test Acc: 66.75%
+Epoch 103/300: 100%|██████████| 7/7 [01:53<00:00, 16.24s/it, Loss=0.2728, L Loss=0.0689, U Loss=0.2039, LR=0.026721]
+04/20/2025 20:46:06 - INFO - root -   Epoch 103: Val Loss: 0.6616, Val Acc: 62.60%, Test Loss: 0.6242, Test Acc: 65.10%
+Epoch 104/300: 100%|██████████| 7/7 [01:54<00:00, 16.38s/it, Loss=0.2476, L Loss=0.0438, U Loss=0.2038, LR=0.026659]
+04/20/2025 20:48:28 - INFO - root -   Epoch 104: Val Loss: 0.6610, Val Acc: 60.20%, Test Loss: 0.6223, Test Acc: 66.10%
+Epoch 105/300: 100%|██████████| 7/7 [01:53<00:00, 16.21s/it, Loss=0.2620, L Loss=0.0532, U Loss=0.2088, LR=0.026595]
+04/20/2025 20:50:49 - INFO - root -   Epoch 105: Val Loss: 0.6619, Val Acc: 60.80%, Test Loss: 0.6196, Test Acc: 67.75%
+Epoch 106/300: 100%|██████████| 7/7 [01:53<00:00, 16.23s/it, Loss=0.2508, L Loss=0.0484, U Loss=0.2024, LR=0.026531]
+04/20/2025 20:53:09 - INFO - root -   Epoch 106: Val Loss: 0.6560, Val Acc: 61.40%, Test Loss: 0.6181, Test Acc: 66.70%
+Epoch 107/300: 100%|██████████| 7/7 [01:51<00:00, 15.99s/it, Loss=0.2564, L Loss=0.0423, U Loss=0.2142, LR=0.026467]
+04/20/2025 20:55:26 - INFO - root -   Epoch 107: Val Loss: 0.6539, Val Acc: 62.60%, Test Loss: 0.6174, Test Acc: 67.30%
+Epoch 108/300: 100%|██████████| 7/7 [01:52<00:00, 16.00s/it, Loss=0.2285, L Loss=0.0500, U Loss=0.1785, LR=0.026402]
+04/20/2025 20:57:44 - INFO - root -   Epoch 108: Val Loss: 0.6569, Val Acc: 61.80%, Test Loss: 0.6138, Test Acc: 67.65%
+Epoch 109/300: 100%|██████████| 7/7 [01:52<00:00, 16.13s/it, Loss=0.2571, L Loss=0.0582, U Loss=0.1989, LR=0.026336]
+04/20/2025 21:00:03 - INFO - root -   Epoch 109: Val Loss: 0.6629, Val Acc: 60.40%, Test Loss: 0.6139, Test Acc: 67.45%
+Epoch 110/300: 100%|██████████| 7/7 [01:52<00:00, 16.13s/it, Loss=0.2386, L Loss=0.0499, U Loss=0.1887, LR=0.026270]
+04/20/2025 21:02:23 - INFO - root -   Epoch 110: Val Loss: 0.6598, Val Acc: 61.80%, Test Loss: 0.6115, Test Acc: 68.95%
+Epoch 111/300: 100%|██████████| 7/7 [01:51<00:00, 15.91s/it, Loss=0.2827, L Loss=0.0638, U Loss=0.2189, LR=0.026204]
+04/20/2025 21:04:42 - INFO - root -   Epoch 111: Val Loss: 0.6608, Val Acc: 60.20%, Test Loss: 0.6108, Test Acc: 67.60%
+Epoch 112/300: 100%|██████████| 7/7 [01:52<00:00, 16.02s/it, Loss=0.2555, L Loss=0.0540, U Loss=0.2015, LR=0.026136]
+04/20/2025 21:07:02 - INFO - root -   Epoch 112: Val Loss: 0.6537, Val Acc: 62.20%, Test Loss: 0.6064, Test Acc: 67.90%
+Epoch 113/300: 100%|██████████| 7/7 [01:52<00:00, 16.08s/it, Loss=0.2388, L Loss=0.0586, U Loss=0.1803, LR=0.026069]
+04/20/2025 21:09:22 - INFO - root -   Epoch 113: Val Loss: 0.6605, Val Acc: 62.40%, Test Loss: 0.6109, Test Acc: 67.40%
+Epoch 114/300: 100%|██████████| 7/7 [01:52<00:00, 16.06s/it, Loss=0.2560, L Loss=0.0529, U Loss=0.2031, LR=0.026000]
+04/20/2025 21:11:40 - INFO - root -   Epoch 114: Val Loss: 0.6578, Val Acc: 59.40%, Test Loss: 0.6058, Test Acc: 67.70%
+Epoch 115/300: 100%|██████████| 7/7 [01:53<00:00, 16.20s/it, Loss=0.2613, L Loss=0.0683, U Loss=0.1930, LR=0.025932]
+04/20/2025 21:14:00 - INFO - root -   Epoch 115: Val Loss: 0.6454, Val Acc: 63.20%, Test Loss: 0.6069, Test Acc: 68.00%
+Epoch 116/300: 100%|██████████| 7/7 [01:53<00:00, 16.17s/it, Loss=0.2739, L Loss=0.0577, U Loss=0.2162, LR=0.025862]
+04/20/2025 21:16:21 - INFO - root -   Epoch 116: Val Loss: 0.6477, Val Acc: 63.60%, Test Loss: 0.6079, Test Acc: 69.05%
+Epoch 117/300: 100%|██████████| 7/7 [01:53<00:00, 16.20s/it, Loss=0.2614, L Loss=0.0472, U Loss=0.2141, LR=0.025792]
+04/20/2025 21:18:42 - INFO - root -   Epoch 117: Val Loss: 0.6489, Val Acc: 60.00%, Test Loss: 0.6080, Test Acc: 68.45%
+Epoch 118/300: 100%|██████████| 7/7 [01:52<00:00, 16.09s/it, Loss=0.2392, L Loss=0.0496, U Loss=0.1895, LR=0.025722]
+04/20/2025 21:21:00 - INFO - root -   Epoch 118: Val Loss: 0.6550, Val Acc: 62.80%, Test Loss: 0.6054, Test Acc: 69.00%
+Epoch 119/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.2235, L Loss=0.0397, U Loss=0.1838, LR=0.025651]
+04/20/2025 21:23:22 - INFO - root -   Epoch 119: Val Loss: 0.6517, Val Acc: 63.80%, Test Loss: 0.6031, Test Acc: 68.40%
+Epoch 120/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.2208, L Loss=0.0354, U Loss=0.1854, LR=0.025579]
+04/20/2025 21:25:43 - INFO - root -   Epoch 120: Val Loss: 0.6479, Val Acc: 63.60%, Test Loss: 0.6017, Test Acc: 68.15%
+Epoch 121/300: 100%|██████████| 7/7 [02:04<00:00, 17.72s/it, Loss=0.2438, L Loss=0.0474, U Loss=0.1963, LR=0.025507]
+04/20/2025 21:28:14 - INFO - root -   Epoch 121: Val Loss: 0.6432, Val Acc: 63.00%, Test Loss: 0.5970, Test Acc: 69.00%
+Epoch 122/300: 100%|██████████| 7/7 [01:54<00:00, 16.34s/it, Loss=0.2217, L Loss=0.0415, U Loss=0.1802, LR=0.025435]
+04/20/2025 21:30:35 - INFO - root -   Epoch 122: Val Loss: 0.6412, Val Acc: 64.20%, Test Loss: 0.6014, Test Acc: 69.25%
+Epoch 123/300: 100%|██████████| 7/7 [01:53<00:00, 16.28s/it, Loss=0.2451, L Loss=0.0358, U Loss=0.2093, LR=0.025361]
+04/20/2025 21:32:57 - INFO - root -   Epoch 123: Val Loss: 0.6480, Val Acc: 64.60%, Test Loss: 0.5966, Test Acc: 70.05%
+Epoch 124/300: 100%|██████████| 7/7 [01:54<00:00, 16.37s/it, Loss=0.2384, L Loss=0.0306, U Loss=0.2078, LR=0.025288]
+04/20/2025 21:35:19 - INFO - root -   Epoch 124: Val Loss: 0.6338, Val Acc: 65.00%, Test Loss: 0.5959, Test Acc: 69.15%
+Epoch 125/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.2093, L Loss=0.0364, U Loss=0.1729, LR=0.025213]
+04/20/2025 21:37:42 - INFO - root -   Epoch 125: Val Loss: 0.6511, Val Acc: 63.60%, Test Loss: 0.5950, Test Acc: 68.90%
+Epoch 126/300: 100%|██████████| 7/7 [01:54<00:00, 16.34s/it, Loss=0.2181, L Loss=0.0312, U Loss=0.1870, LR=0.025139]
+04/20/2025 21:40:03 - INFO - root -   Epoch 126: Val Loss: 0.6490, Val Acc: 63.00%, Test Loss: 0.5903, Test Acc: 69.75%
+Epoch 127/300: 100%|██████████| 7/7 [01:54<00:00, 16.40s/it, Loss=0.2424, L Loss=0.0326, U Loss=0.2098, LR=0.025063]
+04/20/2025 21:42:30 - INFO - root -   Epoch 127: Val Loss: 0.6403, Val Acc: 65.60%, Test Loss: 0.5964, Test Acc: 68.65%
+Epoch 128/300: 100%|██████████| 7/7 [02:42<00:00, 23.27s/it, Loss=0.2470, L Loss=0.0219, U Loss=0.2251, LR=0.024988]
+04/20/2025 21:45:47 - INFO - root -   Epoch 128: Val Loss: 0.6411, Val Acc: 64.00%, Test Loss: 0.5910, Test Acc: 69.75%
+Epoch 129/300: 100%|██████████| 7/7 [02:40<00:00, 22.92s/it, Loss=0.2394, L Loss=0.0297, U Loss=0.2097, LR=0.024911]
+04/20/2025 21:49:04 - INFO - root -   Epoch 129: Val Loss: 0.6360, Val Acc: 64.80%, Test Loss: 0.5886, Test Acc: 69.30%
+Epoch 130/300: 100%|██████████| 7/7 [03:41<00:00, 31.68s/it, Loss=0.2246, L Loss=0.0370, U Loss=0.1876, LR=0.024834]
+04/20/2025 21:54:01 - INFO - root -   Epoch 130: Val Loss: 0.6397, Val Acc: 65.40%, Test Loss: 0.5893, Test Acc: 69.90%
+Epoch 131/300: 100%|██████████| 7/7 [05:12<00:00, 44.68s/it, Loss=0.2173, L Loss=0.0303, U Loss=0.1870, LR=0.024757]
+04/20/2025 22:00:16 - INFO - root -   Epoch 131: Val Loss: 0.6406, Val Acc: 64.80%, Test Loss: 0.5873, Test Acc: 70.05%
+Epoch 132/300: 100%|██████████| 7/7 [04:09<00:00, 35.66s/it, Loss=0.2581, L Loss=0.0478, U Loss=0.2103, LR=0.024679]
+04/20/2025 22:05:33 - INFO - root -   Epoch 132: Val Loss: 0.6389, Val Acc: 63.40%, Test Loss: 0.5826, Test Acc: 70.15%
+Epoch 133/300: 100%|██████████| 7/7 [04:18<00:00, 36.94s/it, Loss=0.2323, L Loss=0.0329, U Loss=0.1994, LR=0.024601]
+04/20/2025 22:10:52 - INFO - root -   Epoch 133: Val Loss: 0.6384, Val Acc: 63.60%, Test Loss: 0.5866, Test Acc: 69.20%
+Epoch 134/300: 100%|██████████| 7/7 [04:53<00:00, 41.98s/it, Loss=0.2118, L Loss=0.0266, U Loss=0.1852, LR=0.024522]
+04/20/2025 22:16:46 - INFO - root -   Epoch 134: Val Loss: 0.6378, Val Acc: 64.40%, Test Loss: 0.5847, Test Acc: 69.70%
+Epoch 135/300: 100%|██████████| 7/7 [03:42<00:00, 31.86s/it, Loss=0.2145, L Loss=0.0321, U Loss=0.1824, LR=0.024442]
+04/20/2025 22:21:25 - INFO - root -   Epoch 135: Val Loss: 0.6339, Val Acc: 65.40%, Test Loss: 0.5833, Test Acc: 70.30%
+Epoch 136/300: 100%|██████████| 7/7 [04:07<00:00, 35.32s/it, Loss=0.2478, L Loss=0.0369, U Loss=0.2109, LR=0.024363]
+04/20/2025 22:26:26 - INFO - root -   Epoch 136: Val Loss: 0.6347, Val Acc: 65.00%, Test Loss: 0.5828, Test Acc: 70.20%
+Epoch 137/300: 100%|██████████| 7/7 [03:55<00:00, 33.62s/it, Loss=0.2415, L Loss=0.0356, U Loss=0.2059, LR=0.024282]
+04/20/2025 22:31:22 - INFO - root -   Epoch 137: Val Loss: 0.6382, Val Acc: 66.00%, Test Loss: 0.5790, Test Acc: 70.85%
+Epoch 138/300: 100%|██████████| 7/7 [04:22<00:00, 37.49s/it, Loss=0.2204, L Loss=0.0315, U Loss=0.1889, LR=0.024201]
+04/20/2025 22:36:46 - INFO - root -   Epoch 138: Val Loss: 0.6275, Val Acc: 64.40%, Test Loss: 0.5731, Test Acc: 71.20%
+Epoch 139/300: 100%|██████████| 7/7 [04:37<00:00, 39.67s/it, Loss=0.2268, L Loss=0.0288, U Loss=0.1979, LR=0.024120]
+04/20/2025 22:42:30 - INFO - root -   Epoch 139: Val Loss: 0.6321, Val Acc: 64.60%, Test Loss: 0.5818, Test Acc: 69.75%
+Epoch 140/300: 100%|██████████| 7/7 [04:37<00:00, 39.61s/it, Loss=0.2289, L Loss=0.0260, U Loss=0.2029, LR=0.024038]
+04/20/2025 22:48:08 - INFO - root -   Epoch 140: Val Loss: 0.6386, Val Acc: 65.00%, Test Loss: 0.5809, Test Acc: 70.15%
+Epoch 141/300: 100%|██████████| 7/7 [03:43<00:00, 31.95s/it, Loss=0.2097, L Loss=0.0200, U Loss=0.1897, LR=0.023955]
+04/20/2025 22:52:40 - INFO - root -   Epoch 141: Val Loss: 0.6305, Val Acc: 65.80%, Test Loss: 0.5752, Test Acc: 70.25%
+Epoch 142/300: 100%|██████████| 7/7 [03:35<00:00, 30.72s/it, Loss=0.2146, L Loss=0.0251, U Loss=0.1895, LR=0.023872]
+04/20/2025 22:57:05 - INFO - root -   Epoch 142: Val Loss: 0.6230, Val Acc: 65.40%, Test Loss: 0.5778, Test Acc: 70.05%
+Epoch 143/300: 100%|██████████| 7/7 [03:55<00:00, 33.66s/it, Loss=0.2101, L Loss=0.0292, U Loss=0.1809, LR=0.023789]
+04/20/2025 23:01:51 - INFO - root -   Epoch 143: Val Loss: 0.6320, Val Acc: 65.40%, Test Loss: 0.5763, Test Acc: 69.80%
+Epoch 144/300: 100%|██████████| 7/7 [02:47<00:00, 23.94s/it, Loss=0.2411, L Loss=0.0270, U Loss=0.2141, LR=0.023705]
+04/20/2025 23:05:07 - INFO - root -   Epoch 144: Val Loss: 0.6374, Val Acc: 65.00%, Test Loss: 0.5693, Test Acc: 71.60%
+Epoch 145/300: 100%|██████████| 7/7 [01:58<00:00, 16.96s/it, Loss=0.2378, L Loss=0.0273, U Loss=0.2105, LR=0.023620]
+04/20/2025 23:07:33 - INFO - root -   Epoch 145: Val Loss: 0.6301, Val Acc: 67.20%, Test Loss: 0.5729, Test Acc: 71.05%
+Epoch 146/300: 100%|██████████| 7/7 [01:56<00:00, 16.58s/it, Loss=0.2459, L Loss=0.0433, U Loss=0.2026, LR=0.023535]
+04/20/2025 23:09:56 - INFO - root -   Epoch 146: Val Loss: 0.6217, Val Acc: 65.20%, Test Loss: 0.5718, Test Acc: 70.85%
+Epoch 147/300: 100%|██████████| 7/7 [01:58<00:00, 16.94s/it, Loss=0.2176, L Loss=0.0234, U Loss=0.1942, LR=0.023450]
+04/20/2025 23:12:24 - INFO - root -   Epoch 147: Val Loss: 0.6299, Val Acc: 67.00%, Test Loss: 0.5637, Test Acc: 71.45%
+Epoch 148/300: 100%|██████████| 7/7 [01:59<00:00, 17.08s/it, Loss=0.2247, L Loss=0.0250, U Loss=0.1997, LR=0.023364]
+04/20/2025 23:14:51 - INFO - root -   Epoch 148: Val Loss: 0.6310, Val Acc: 64.40%, Test Loss: 0.5666, Test Acc: 70.75%
+Epoch 149/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.2059, L Loss=0.0203, U Loss=0.1856, LR=0.023277]
+04/20/2025 23:17:13 - INFO - root -   Epoch 149: Val Loss: 0.6233, Val Acc: 65.60%, Test Loss: 0.5670, Test Acc: 70.60%
+Epoch 150/300: 100%|██████████| 7/7 [01:58<00:00, 16.87s/it, Loss=0.2133, L Loss=0.0241, U Loss=0.1892, LR=0.023190]
+04/20/2025 23:19:38 - INFO - root -   Epoch 150: Val Loss: 0.6229, Val Acc: 67.00%, Test Loss: 0.5682, Test Acc: 70.60%
+Epoch 151/300: 100%|██████████| 7/7 [01:55<00:00, 16.47s/it, Loss=0.2122, L Loss=0.0156, U Loss=0.1966, LR=0.023103]
+04/20/2025 23:22:01 - INFO - root -   Epoch 151: Val Loss: 0.6260, Val Acc: 64.40%, Test Loss: 0.5631, Test Acc: 71.40%
+Epoch 152/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.2529, L Loss=0.0252, U Loss=0.2276, LR=0.023015]
+04/20/2025 23:24:22 - INFO - root -   Epoch 152: Val Loss: 0.6232, Val Acc: 66.20%, Test Loss: 0.5636, Test Acc: 71.60%
+Epoch 153/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.2428, L Loss=0.0549, U Loss=0.1879, LR=0.022927]
+04/20/2025 23:26:45 - INFO - root -   Epoch 153: Val Loss: 0.6291, Val Acc: 66.40%, Test Loss: 0.5609, Test Acc: 71.95%
+Epoch 154/300: 100%|██████████| 7/7 [01:55<00:00, 16.55s/it, Loss=0.2279, L Loss=0.0376, U Loss=0.1904, LR=0.022838]
+04/20/2025 23:29:08 - INFO - root -   Epoch 154: Val Loss: 0.6179, Val Acc: 66.20%, Test Loss: 0.5629, Test Acc: 71.25%
+Epoch 155/300: 100%|██████████| 7/7 [01:54<00:00, 16.37s/it, Loss=0.2155, L Loss=0.0320, U Loss=0.1835, LR=0.022748]
+04/20/2025 23:31:30 - INFO - root -   Epoch 155: Val Loss: 0.6247, Val Acc: 65.20%, Test Loss: 0.5606, Test Acc: 71.45%
+Epoch 156/300: 100%|██████████| 7/7 [01:54<00:00, 16.37s/it, Loss=0.2152, L Loss=0.0296, U Loss=0.1856, LR=0.022658]
+04/20/2025 23:33:52 - INFO - root -   Epoch 156: Val Loss: 0.6302, Val Acc: 68.00%, Test Loss: 0.5599, Test Acc: 70.90%
+Epoch 157/300: 100%|██████████| 7/7 [01:56<00:00, 16.60s/it, Loss=0.2356, L Loss=0.0353, U Loss=0.2003, LR=0.022568]
+04/20/2025 23:36:15 - INFO - root -   Epoch 157: Val Loss: 0.6119, Val Acc: 67.20%, Test Loss: 0.5601, Test Acc: 71.00%
+Epoch 158/300: 100%|██████████| 7/7 [01:54<00:00, 16.41s/it, Loss=0.2224, L Loss=0.0198, U Loss=0.2026, LR=0.022477]
+04/20/2025 23:38:37 - INFO - root -   Epoch 158: Val Loss: 0.6269, Val Acc: 65.40%, Test Loss: 0.5558, Test Acc: 71.45%
+Epoch 159/300: 100%|██████████| 7/7 [01:54<00:00, 16.39s/it, Loss=0.2341, L Loss=0.0295, U Loss=0.2046, LR=0.022386]
+04/20/2025 23:40:59 - INFO - root -   Epoch 159: Val Loss: 0.6404, Val Acc: 64.80%, Test Loss: 0.5579, Test Acc: 71.45%
+Epoch 160/300: 100%|██████████| 7/7 [01:56<00:00, 16.66s/it, Loss=0.1995, L Loss=0.0211, U Loss=0.1785, LR=0.022294]
+04/20/2025 23:43:23 - INFO - root -   Epoch 160: Val Loss: 0.6215, Val Acc: 67.40%, Test Loss: 0.5610, Test Acc: 71.20%
+Epoch 161/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.2439, L Loss=0.0326, U Loss=0.2113, LR=0.022202]
+04/20/2025 23:45:45 - INFO - root -   Epoch 161: Val Loss: 0.6210, Val Acc: 67.60%, Test Loss: 0.5532, Test Acc: 72.65%
+Epoch 162/300: 100%|██████████| 7/7 [01:54<00:00, 16.43s/it, Loss=0.2127, L Loss=0.0231, U Loss=0.1896, LR=0.022109]
+04/20/2025 23:48:07 - INFO - root -   Epoch 162: Val Loss: 0.6259, Val Acc: 67.00%, Test Loss: 0.5496, Test Acc: 72.70%
+Epoch 163/300: 100%|██████████| 7/7 [01:54<00:00, 16.43s/it, Loss=0.1957, L Loss=0.0329, U Loss=0.1628, LR=0.022016]
+04/20/2025 23:50:29 - INFO - root -   Epoch 163: Val Loss: 0.6180, Val Acc: 67.00%, Test Loss: 0.5557, Test Acc: 71.50%
+Epoch 164/300: 100%|██████████| 7/7 [01:55<00:00, 16.53s/it, Loss=0.2019, L Loss=0.0255, U Loss=0.1764, LR=0.021923]
+04/20/2025 23:52:52 - INFO - root -   Epoch 164: Val Loss: 0.6194, Val Acc: 66.60%, Test Loss: 0.5562, Test Acc: 70.95%
+Epoch 165/300: 100%|██████████| 7/7 [01:53<00:00, 16.26s/it, Loss=0.1999, L Loss=0.0215, U Loss=0.1784, LR=0.021829]
+04/20/2025 23:55:13 - INFO - root -   Epoch 165: Val Loss: 0.6275, Val Acc: 65.80%, Test Loss: 0.5490, Test Acc: 71.90%
+Epoch 166/300: 100%|██████████| 7/7 [01:54<00:00, 16.40s/it, Loss=0.2106, L Loss=0.0156, U Loss=0.1949, LR=0.021734]
+04/20/2025 23:57:34 - INFO - root -   Epoch 166: Val Loss: 0.6229, Val Acc: 67.80%, Test Loss: 0.5480, Test Acc: 72.20%
+Epoch 167/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.2376, L Loss=0.0282, U Loss=0.2094, LR=0.021639]
+04/20/2025 23:59:56 - INFO - root -   Epoch 167: Val Loss: 0.6191, Val Acc: 65.80%, Test Loss: 0.5499, Test Acc: 72.00%
+Epoch 168/300: 100%|██████████| 7/7 [01:57<00:00, 16.73s/it, Loss=0.2047, L Loss=0.0140, U Loss=0.1908, LR=0.021544]
+04/21/2025 00:02:22 - INFO - root -   Epoch 168: Val Loss: 0.6140, Val Acc: 66.40%, Test Loss: 0.5508, Test Acc: 71.50%
+Epoch 169/300: 100%|██████████| 7/7 [01:54<00:00, 16.41s/it, Loss=0.2190, L Loss=0.0261, U Loss=0.1929, LR=0.021448]
+04/21/2025 00:04:44 - INFO - root -   Epoch 169: Val Loss: 0.6237, Val Acc: 67.80%, Test Loss: 0.5446, Test Acc: 72.00%
+Epoch 170/300: 100%|██████████| 7/7 [01:56<00:00, 16.63s/it, Loss=0.2157, L Loss=0.0168, U Loss=0.1989, LR=0.021352]
+04/21/2025 00:07:07 - INFO - root -   Epoch 170: Val Loss: 0.6215, Val Acc: 68.00%, Test Loss: 0.5427, Test Acc: 72.45%
+Epoch 171/300: 100%|██████████| 7/7 [01:55<00:00, 16.52s/it, Loss=0.2075, L Loss=0.0169, U Loss=0.1906, LR=0.021255]
+04/21/2025 00:09:29 - INFO - root -   Epoch 171: Val Loss: 0.6140, Val Acc: 68.00%, Test Loss: 0.5474, Test Acc: 72.55%
+Epoch 172/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.2039, L Loss=0.0266, U Loss=0.1772, LR=0.021158]
+04/21/2025 00:11:53 - INFO - root -   Epoch 172: Val Loss: 0.6230, Val Acc: 68.20%, Test Loss: 0.5430, Test Acc: 72.55%
+Epoch 173/300: 100%|██████████| 7/7 [01:56<00:00, 16.57s/it, Loss=0.2134, L Loss=0.0147, U Loss=0.1987, LR=0.021060]
+04/21/2025 00:14:19 - INFO - root -   Epoch 173: Val Loss: 0.6199, Val Acc: 67.20%, Test Loss: 0.5391, Test Acc: 72.25%
+Epoch 174/300: 100%|██████████| 7/7 [01:55<00:00, 16.48s/it, Loss=0.1973, L Loss=0.0161, U Loss=0.1812, LR=0.020962]
+04/21/2025 00:16:42 - INFO - root -   Epoch 174: Val Loss: 0.6163, Val Acc: 68.00%, Test Loss: 0.5405, Test Acc: 73.15%
+Epoch 175/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.1982, L Loss=0.0147, U Loss=0.1835, LR=0.020863]
+04/21/2025 00:19:04 - INFO - root -   Epoch 175: Val Loss: 0.6243, Val Acc: 67.20%, Test Loss: 0.5384, Test Acc: 72.70%
+Epoch 176/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.2203, L Loss=0.0198, U Loss=0.2005, LR=0.020764]
+04/21/2025 00:21:26 - INFO - root -   Epoch 176: Val Loss: 0.6241, Val Acc: 66.00%, Test Loss: 0.5413, Test Acc: 73.00%
+Epoch 177/300: 100%|██████████| 7/7 [01:55<00:00, 16.56s/it, Loss=0.1789, L Loss=0.0222, U Loss=0.1567, LR=0.020665]
+04/21/2025 00:23:49 - INFO - root -   Epoch 177: Val Loss: 0.6196, Val Acc: 68.40%, Test Loss: 0.5340, Test Acc: 73.35%
+Epoch 178/300: 100%|██████████| 7/7 [01:55<00:00, 16.54s/it, Loss=0.1949, L Loss=0.0149, U Loss=0.1800, LR=0.020565]
+04/21/2025 00:26:12 - INFO - root -   Epoch 178: Val Loss: 0.6155, Val Acc: 68.60%, Test Loss: 0.5398, Test Acc: 73.15%
+Epoch 179/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.2264, L Loss=0.0192, U Loss=0.2072, LR=0.020465]
+04/21/2025 00:28:34 - INFO - root -   Epoch 179: Val Loss: 0.6222, Val Acc: 68.20%, Test Loss: 0.5417, Test Acc: 72.90%
+Epoch 180/300: 100%|██████████| 7/7 [01:55<00:00, 16.54s/it, Loss=0.1977, L Loss=0.0173, U Loss=0.1804, LR=0.020364]
+04/21/2025 00:30:58 - INFO - root -   Epoch 180: Val Loss: 0.6029, Val Acc: 68.20%, Test Loss: 0.5341, Test Acc: 74.15%
+Epoch 181/300: 100%|██████████| 7/7 [01:55<00:00, 16.52s/it, Loss=0.2092, L Loss=0.0204, U Loss=0.1888, LR=0.020263]
+04/21/2025 00:33:20 - INFO - root -   Epoch 181: Val Loss: 0.6159, Val Acc: 68.20%, Test Loss: 0.5348, Test Acc: 73.05%
+Epoch 182/300: 100%|██████████| 7/7 [01:54<00:00, 16.40s/it, Loss=0.2113, L Loss=0.0256, U Loss=0.1857, LR=0.020161]
+04/21/2025 00:35:43 - INFO - root -   Epoch 182: Val Loss: 0.6300, Val Acc: 67.80%, Test Loss: 0.5388, Test Acc: 73.00%
+Epoch 183/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.1908, L Loss=0.0148, U Loss=0.1759, LR=0.020059]
+04/21/2025 00:38:05 - INFO - root -   Epoch 183: Val Loss: 0.6187, Val Acc: 67.40%, Test Loss: 0.5370, Test Acc: 73.05%
+Epoch 184/300: 100%|██████████| 7/7 [01:55<00:00, 16.48s/it, Loss=0.2109, L Loss=0.0153, U Loss=0.1956, LR=0.019957]
+04/21/2025 00:40:27 - INFO - root -   Epoch 184: Val Loss: 0.6155, Val Acc: 67.40%, Test Loss: 0.5366, Test Acc: 71.95%
+Epoch 185/300: 100%|██████████| 7/7 [01:55<00:00, 16.46s/it, Loss=0.2164, L Loss=0.0221, U Loss=0.1943, LR=0.019854]
+04/21/2025 00:42:50 - INFO - root -   Epoch 185: Val Loss: 0.6252, Val Acc: 68.20%, Test Loss: 0.5348, Test Acc: 73.60%
+Epoch 186/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.2047, L Loss=0.0163, U Loss=0.1884, LR=0.019751]
+04/21/2025 00:45:13 - INFO - root -   Epoch 186: Val Loss: 0.6200, Val Acc: 69.20%, Test Loss: 0.5379, Test Acc: 73.10%
+Epoch 187/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.1973, L Loss=0.0146, U Loss=0.1827, LR=0.019647]
+04/21/2025 00:47:34 - INFO - root -   Epoch 187: Val Loss: 0.6244, Val Acc: 68.20%, Test Loss: 0.5333, Test Acc: 73.75%
+Epoch 188/300: 100%|██████████| 7/7 [01:55<00:00, 16.55s/it, Loss=0.1973, L Loss=0.0191, U Loss=0.1782, LR=0.019543]
+04/21/2025 00:49:58 - INFO - root -   Epoch 188: Val Loss: 0.6078, Val Acc: 68.60%, Test Loss: 0.5342, Test Acc: 74.05%
+Epoch 189/300: 100%|██████████| 7/7 [01:55<00:00, 16.52s/it, Loss=0.1981, L Loss=0.0207, U Loss=0.1774, LR=0.019439]
+04/21/2025 00:52:21 - INFO - root -   Epoch 189: Val Loss: 0.6101, Val Acc: 68.40%, Test Loss: 0.5280, Test Acc: 74.60%
+Epoch 190/300: 100%|██████████| 7/7 [01:57<00:00, 16.74s/it, Loss=0.2205, L Loss=0.0168, U Loss=0.2037, LR=0.019334]
+04/21/2025 00:54:45 - INFO - root -   Epoch 190: Val Loss: 0.6279, Val Acc: 69.00%, Test Loss: 0.5383, Test Acc: 73.25%
+Epoch 191/300: 100%|██████████| 7/7 [01:55<00:00, 16.43s/it, Loss=0.2122, L Loss=0.0224, U Loss=0.1898, LR=0.019228]
+04/21/2025 00:57:07 - INFO - root -   Epoch 191: Val Loss: 0.5967, Val Acc: 70.40%, Test Loss: 0.5346, Test Acc: 72.45%
+Epoch 192/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.2231, L Loss=0.0252, U Loss=0.1979, LR=0.019123]
+04/21/2025 00:59:29 - INFO - root -   Epoch 192: Val Loss: 0.6122, Val Acc: 68.80%, Test Loss: 0.5386, Test Acc: 72.80%
+Epoch 193/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.2154, L Loss=0.0236, U Loss=0.1918, LR=0.019017]
+04/21/2025 01:01:52 - INFO - root -   Epoch 193: Val Loss: 0.6117, Val Acc: 68.80%, Test Loss: 0.5347, Test Acc: 73.75%
+Epoch 194/300: 100%|██████████| 7/7 [01:55<00:00, 16.47s/it, Loss=0.2170, L Loss=0.0365, U Loss=0.1806, LR=0.018910]
+04/21/2025 01:04:15 - INFO - root -   Epoch 194: Val Loss: 0.6187, Val Acc: 68.60%, Test Loss: 0.5260, Test Acc: 74.05%
+Epoch 195/300: 100%|██████████| 7/7 [01:56<00:00, 16.68s/it, Loss=0.2145, L Loss=0.0237, U Loss=0.1908, LR=0.018803]
+04/21/2025 01:06:39 - INFO - root -   Epoch 195: Val Loss: 0.6175, Val Acc: 68.80%, Test Loss: 0.5279, Test Acc: 73.90%
+Epoch 196/300: 100%|██████████| 7/7 [01:56<00:00, 16.63s/it, Loss=0.1971, L Loss=0.0137, U Loss=0.1835, LR=0.018696]
+04/21/2025 01:09:03 - INFO - root -   Epoch 196: Val Loss: 0.6052, Val Acc: 69.20%, Test Loss: 0.5275, Test Acc: 73.60%
+Epoch 197/300: 100%|██████████| 7/7 [01:54<00:00, 16.43s/it, Loss=0.2043, L Loss=0.0204, U Loss=0.1839, LR=0.018588]
+04/21/2025 01:11:25 - INFO - root -   Epoch 197: Val Loss: 0.6094, Val Acc: 68.80%, Test Loss: 0.5353, Test Acc: 72.85%
+Epoch 198/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.2030, L Loss=0.0184, U Loss=0.1847, LR=0.018480]
+04/21/2025 01:13:48 - INFO - root -   Epoch 198: Val Loss: 0.5952, Val Acc: 71.00%, Test Loss: 0.5326, Test Acc: 73.85%
+Epoch 199/300: 100%|██████████| 7/7 [01:56<00:00, 16.58s/it, Loss=0.2036, L Loss=0.0134, U Loss=0.1903, LR=0.018372]
+04/21/2025 01:16:14 - INFO - root -   Epoch 199: Val Loss: 0.6122, Val Acc: 67.60%, Test Loss: 0.5266, Test Acc: 74.05%
+Epoch 200/300: 100%|██████████| 7/7 [01:56<00:00, 16.58s/it, Loss=0.2034, L Loss=0.0276, U Loss=0.1758, LR=0.018263]
+04/21/2025 01:18:38 - INFO - root -   Epoch 200: Val Loss: 0.6053, Val Acc: 69.20%, Test Loss: 0.5273, Test Acc: 73.55%
+Epoch 201/300: 100%|██████████| 7/7 [01:54<00:00, 16.39s/it, Loss=0.1800, L Loss=0.0133, U Loss=0.1668, LR=0.018154]
+04/21/2025 01:21:01 - INFO - root -   Epoch 201: Val Loss: 0.6199, Val Acc: 68.20%, Test Loss: 0.5256, Test Acc: 73.75%
+Epoch 202/300: 100%|██████████| 7/7 [01:55<00:00, 16.57s/it, Loss=0.1946, L Loss=0.0142, U Loss=0.1803, LR=0.018044]
+04/21/2025 01:23:23 - INFO - root -   Epoch 202: Val Loss: 0.6259, Val Acc: 69.40%, Test Loss: 0.5298, Test Acc: 74.15%
+Epoch 203/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.1992, L Loss=0.0120, U Loss=0.1872, LR=0.017934]
+04/21/2025 01:25:46 - INFO - root -   Epoch 203: Val Loss: 0.6134, Val Acc: 69.00%, Test Loss: 0.5183, Test Acc: 75.05%
+Epoch 204/300: 100%|██████████| 7/7 [01:55<00:00, 16.47s/it, Loss=0.1873, L Loss=0.0173, U Loss=0.1700, LR=0.017824]
+04/21/2025 01:28:09 - INFO - root -   Epoch 204: Val Loss: 0.6139, Val Acc: 68.40%, Test Loss: 0.5273, Test Acc: 74.40%
+Epoch 205/300: 100%|██████████| 7/7 [01:54<00:00, 16.30s/it, Loss=0.2072, L Loss=0.0221, U Loss=0.1852, LR=0.017713]
+04/21/2025 01:30:30 - INFO - root -   Epoch 205: Val Loss: 0.6183, Val Acc: 70.00%, Test Loss: 0.5286, Test Acc: 73.90%
+Epoch 206/300: 100%|██████████| 7/7 [01:54<00:00, 16.39s/it, Loss=0.1836, L Loss=0.0158, U Loss=0.1678, LR=0.017602]
+04/21/2025 01:32:52 - INFO - root -   Epoch 206: Val Loss: 0.6192, Val Acc: 68.60%, Test Loss: 0.5129, Test Acc: 74.65%
+Epoch 207/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.2072, L Loss=0.0216, U Loss=0.1856, LR=0.017490]
+04/21/2025 01:35:14 - INFO - root -   Epoch 207: Val Loss: 0.6287, Val Acc: 69.00%, Test Loss: 0.5193, Test Acc: 74.85%
+Epoch 208/300: 100%|██████████| 7/7 [01:54<00:00, 16.34s/it, Loss=0.1972, L Loss=0.0205, U Loss=0.1767, LR=0.017378]
+04/21/2025 01:37:36 - INFO - root -   Epoch 208: Val Loss: 0.6192, Val Acc: 69.20%, Test Loss: 0.5314, Test Acc: 73.45%
+Epoch 209/300: 100%|██████████| 7/7 [01:55<00:00, 16.43s/it, Loss=0.2102, L Loss=0.0130, U Loss=0.1972, LR=0.017266]
+04/21/2025 01:39:59 - INFO - root -   Epoch 209: Val Loss: 0.6229, Val Acc: 68.60%, Test Loss: 0.5339, Test Acc: 74.25%
+Epoch 210/300: 100%|██████████| 7/7 [01:54<00:00, 16.41s/it, Loss=0.2027, L Loss=0.0155, U Loss=0.1873, LR=0.017154]
+04/21/2025 01:42:21 - INFO - root -   Epoch 210: Val Loss: 0.6284, Val Acc: 68.60%, Test Loss: 0.5305, Test Acc: 74.25%
+Epoch 211/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.2100, L Loss=0.0185, U Loss=0.1915, LR=0.017041]
+04/21/2025 01:44:45 - INFO - root -   Epoch 211: Val Loss: 0.6280, Val Acc: 70.60%, Test Loss: 0.5263, Test Acc: 74.75%
+Epoch 212/300: 100%|██████████| 7/7 [01:54<00:00, 16.41s/it, Loss=0.1755, L Loss=0.0141, U Loss=0.1614, LR=0.016927]
+04/21/2025 01:47:06 - INFO - root -   Epoch 212: Val Loss: 0.6113, Val Acc: 71.20%, Test Loss: 0.5265, Test Acc: 74.65%
+Epoch 213/300: 100%|██████████| 7/7 [01:56<00:00, 16.65s/it, Loss=0.1920, L Loss=0.0137, U Loss=0.1783, LR=0.016814]
+04/21/2025 01:49:30 - INFO - root -   Epoch 213: Val Loss: 0.6313, Val Acc: 69.00%, Test Loss: 0.5203, Test Acc: 75.30%
+Epoch 214/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.1995, L Loss=0.0104, U Loss=0.1891, LR=0.016700]
+04/21/2025 01:51:53 - INFO - root -   Epoch 214: Val Loss: 0.6203, Val Acc: 69.60%, Test Loss: 0.5250, Test Acc: 74.80%
+Epoch 215/300: 100%|██████████| 7/7 [01:55<00:00, 16.46s/it, Loss=0.2070, L Loss=0.0165, U Loss=0.1905, LR=0.016585]
+04/21/2025 01:54:15 - INFO - root -   Epoch 215: Val Loss: 0.6101, Val Acc: 71.20%, Test Loss: 0.5177, Test Acc: 75.10%
+Epoch 216/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.1725, L Loss=0.0082, U Loss=0.1643, LR=0.016471]
+04/21/2025 01:56:38 - INFO - root -   Epoch 216: Val Loss: 0.6129, Val Acc: 71.20%, Test Loss: 0.5248, Test Acc: 74.25%
+Epoch 217/300: 100%|██████████| 7/7 [01:53<00:00, 16.27s/it, Loss=0.1883, L Loss=0.0112, U Loss=0.1771, LR=0.016356]
+04/21/2025 01:58:59 - INFO - root -   Epoch 217: Val Loss: 0.6220, Val Acc: 68.60%, Test Loss: 0.5232, Test Acc: 74.25%
+Epoch 218/300: 100%|██████████| 7/7 [01:55<00:00, 16.52s/it, Loss=0.1982, L Loss=0.0139, U Loss=0.1843, LR=0.016240]
+04/21/2025 02:01:21 - INFO - root -   Epoch 218: Val Loss: 0.6253, Val Acc: 68.80%, Test Loss: 0.5252, Test Acc: 74.80%
+Epoch 219/300: 100%|██████████| 7/7 [01:53<00:00, 16.21s/it, Loss=0.1892, L Loss=0.0152, U Loss=0.1740, LR=0.016125]
+04/21/2025 02:03:43 - INFO - root -   Epoch 219: Val Loss: 0.6041, Val Acc: 69.20%, Test Loss: 0.5245, Test Acc: 74.60%
+Epoch 220/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.1912, L Loss=0.0103, U Loss=0.1808, LR=0.016008]
+04/21/2025 02:06:04 - INFO - root -   Epoch 220: Val Loss: 0.6238, Val Acc: 68.20%, Test Loss: 0.5211, Test Acc: 74.30%
+Epoch 221/300: 100%|██████████| 7/7 [01:55<00:00, 16.47s/it, Loss=0.1972, L Loss=0.0162, U Loss=0.1810, LR=0.015892]
+04/21/2025 02:08:27 - INFO - root -   Epoch 221: Val Loss: 0.6087, Val Acc: 71.80%, Test Loss: 0.5157, Test Acc: 75.45%
+Epoch 222/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.2078, L Loss=0.0210, U Loss=0.1868, LR=0.015775]
+04/21/2025 02:10:49 - INFO - root -   Epoch 222: Val Loss: 0.6448, Val Acc: 69.60%, Test Loss: 0.5175, Test Acc: 75.35%
+Epoch 223/300: 100%|██████████| 7/7 [01:54<00:00, 16.38s/it, Loss=0.1872, L Loss=0.0159, U Loss=0.1713, LR=0.015658]
+04/21/2025 02:13:11 - INFO - root -   Epoch 223: Val Loss: 0.6386, Val Acc: 70.20%, Test Loss: 0.5210, Test Acc: 75.60%
+Epoch 224/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.1990, L Loss=0.0124, U Loss=0.1865, LR=0.015541]
+04/21/2025 02:15:33 - INFO - root -   Epoch 224: Val Loss: 0.6197, Val Acc: 71.40%, Test Loss: 0.5253, Test Acc: 74.85%
+Epoch 225/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.1978, L Loss=0.0135, U Loss=0.1843, LR=0.015423]
+04/21/2025 02:17:58 - INFO - root -   Epoch 225: Val Loss: 0.6358, Val Acc: 70.20%, Test Loss: 0.5241, Test Acc: 75.35%
+Epoch 226/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.2098, L Loss=0.0186, U Loss=0.1912, LR=0.015305]
+04/21/2025 02:20:21 - INFO - root -   Epoch 226: Val Loss: 0.6205, Val Acc: 69.00%, Test Loss: 0.5244, Test Acc: 75.00%
+Epoch 227/300: 100%|██████████| 7/7 [01:55<00:00, 16.48s/it, Loss=0.2098, L Loss=0.0146, U Loss=0.1952, LR=0.015187]
+04/21/2025 02:22:44 - INFO - root -   Epoch 227: Val Loss: 0.6425, Val Acc: 69.40%, Test Loss: 0.5233, Test Acc: 74.25%
+Epoch 228/300: 100%|██████████| 7/7 [01:55<00:00, 16.55s/it, Loss=0.1943, L Loss=0.0107, U Loss=0.1836, LR=0.015068]
+04/21/2025 02:25:10 - INFO - root -   Epoch 228: Val Loss: 0.6255, Val Acc: 70.60%, Test Loss: 0.5312, Test Acc: 74.10%
+Epoch 229/300: 100%|██████████| 7/7 [02:01<00:00, 17.32s/it, Loss=0.2009, L Loss=0.0145, U Loss=0.1864, LR=0.014949]
+04/21/2025 02:27:43 - INFO - root -   Epoch 229: Val Loss: 0.6099, Val Acc: 71.40%, Test Loss: 0.5222, Test Acc: 74.85%
+Epoch 230/300: 100%|██████████| 7/7 [01:56<00:00, 16.69s/it, Loss=0.1878, L Loss=0.0133, U Loss=0.1745, LR=0.014830]
+04/21/2025 02:30:06 - INFO - root -   Epoch 230: Val Loss: 0.6327, Val Acc: 70.20%, Test Loss: 0.5231, Test Acc: 74.00%
+Epoch 231/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.1959, L Loss=0.0164, U Loss=0.1795, LR=0.014710]
+04/21/2025 02:32:30 - INFO - root -   Epoch 231: Val Loss: 0.6202, Val Acc: 71.80%, Test Loss: 0.5256, Test Acc: 74.45%
+Epoch 232/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.1995, L Loss=0.0161, U Loss=0.1834, LR=0.014590]
+04/21/2025 02:34:52 - INFO - root -   Epoch 232: Val Loss: 0.6225, Val Acc: 70.20%, Test Loss: 0.5206, Test Acc: 74.85%
+Epoch 233/300: 100%|██████████| 7/7 [01:55<00:00, 16.48s/it, Loss=0.1876, L Loss=0.0154, U Loss=0.1722, LR=0.014470]
+04/21/2025 02:37:15 - INFO - root -   Epoch 233: Val Loss: 0.6266, Val Acc: 70.60%, Test Loss: 0.5197, Test Acc: 75.65%
+Epoch 234/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.1997, L Loss=0.0151, U Loss=0.1846, LR=0.014349]
+04/21/2025 02:39:38 - INFO - root -   Epoch 234: Val Loss: 0.6302, Val Acc: 70.40%, Test Loss: 0.5311, Test Acc: 74.65%
+Epoch 235/300: 100%|██████████| 7/7 [01:54<00:00, 16.32s/it, Loss=0.2010, L Loss=0.0110, U Loss=0.1900, LR=0.014228]
+04/21/2025 02:42:00 - INFO - root -   Epoch 235: Val Loss: 0.6347, Val Acc: 70.00%, Test Loss: 0.5291, Test Acc: 75.25%
+Epoch 236/300: 100%|██████████| 7/7 [01:56<00:00, 16.62s/it, Loss=0.1922, L Loss=0.0101, U Loss=0.1820, LR=0.014107]
+04/21/2025 02:44:23 - INFO - root -   Epoch 236: Val Loss: 0.6235, Val Acc: 70.00%, Test Loss: 0.5271, Test Acc: 75.80%
+Epoch 237/300: 100%|██████████| 7/7 [01:55<00:00, 16.44s/it, Loss=0.1917, L Loss=0.0100, U Loss=0.1817, LR=0.013986]
+04/21/2025 02:46:46 - INFO - root -   Epoch 237: Val Loss: 0.6513, Val Acc: 71.00%, Test Loss: 0.5307, Test Acc: 74.75%
+Epoch 238/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.2010, L Loss=0.0085, U Loss=0.1925, LR=0.013864]
+04/21/2025 02:49:08 - INFO - root -   Epoch 238: Val Loss: 0.6152, Val Acc: 71.60%, Test Loss: 0.5193, Test Acc: 76.20%
+Epoch 239/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.1878, L Loss=0.0115, U Loss=0.1763, LR=0.013742]
+04/21/2025 02:51:29 - INFO - root -   Epoch 239: Val Loss: 0.6307, Val Acc: 70.20%, Test Loss: 0.5227, Test Acc: 75.30%
+Epoch 240/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.1950, L Loss=0.0125, U Loss=0.1825, LR=0.013620]
+04/21/2025 02:53:53 - INFO - root -   Epoch 240: Val Loss: 0.6404, Val Acc: 70.20%, Test Loss: 0.5341, Test Acc: 74.55%
+Epoch 241/300: 100%|██████████| 7/7 [01:54<00:00, 16.33s/it, Loss=0.1630, L Loss=0.0096, U Loss=0.1534, LR=0.013497]
+04/21/2025 02:56:14 - INFO - root -   Epoch 241: Val Loss: 0.6343, Val Acc: 70.80%, Test Loss: 0.5312, Test Acc: 76.30%
+Epoch 242/300: 100%|██████████| 7/7 [01:54<00:00, 16.39s/it, Loss=0.1894, L Loss=0.0096, U Loss=0.1797, LR=0.013374]
+04/21/2025 02:58:35 - INFO - root -   Epoch 242: Val Loss: 0.6177, Val Acc: 72.00%, Test Loss: 0.5299, Test Acc: 75.25%
+Epoch 243/300: 100%|██████████| 7/7 [01:55<00:00, 16.48s/it, Loss=0.1773, L Loss=0.0108, U Loss=0.1666, LR=0.013251]
+04/21/2025 03:00:58 - INFO - root -   Epoch 243: Val Loss: 0.6302, Val Acc: 70.80%, Test Loss: 0.5254, Test Acc: 74.95%
+Epoch 244/300: 100%|██████████| 7/7 [01:54<00:00, 16.35s/it, Loss=0.1867, L Loss=0.0101, U Loss=0.1767, LR=0.013128]
+04/21/2025 03:03:20 - INFO - root -   Epoch 244: Val Loss: 0.6528, Val Acc: 71.00%, Test Loss: 0.5448, Test Acc: 75.10%
+Epoch 245/300: 100%|██████████| 7/7 [01:54<00:00, 16.37s/it, Loss=0.1842, L Loss=0.0156, U Loss=0.1686, LR=0.013004]
+04/21/2025 03:05:42 - INFO - root -   Epoch 245: Val Loss: 0.6496, Val Acc: 69.60%, Test Loss: 0.5302, Test Acc: 75.20%
+Epoch 246/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.1789, L Loss=0.0075, U Loss=0.1715, LR=0.012880]
+04/21/2025 03:08:03 - INFO - root -   Epoch 246: Val Loss: 0.6158, Val Acc: 72.60%, Test Loss: 0.5268, Test Acc: 75.55%
+Epoch 247/300: 100%|██████████| 7/7 [01:55<00:00, 16.46s/it, Loss=0.1719, L Loss=0.0085, U Loss=0.1634, LR=0.012756]
+04/21/2025 03:10:26 - INFO - root -   Epoch 247: Val Loss: 0.6186, Val Acc: 72.40%, Test Loss: 0.5313, Test Acc: 74.65%
+Epoch 248/300: 100%|██████████| 7/7 [01:56<00:00, 16.71s/it, Loss=0.1796, L Loss=0.0091, U Loss=0.1705, LR=0.012631]
+04/21/2025 03:12:50 - INFO - root -   Epoch 248: Val Loss: 0.6479, Val Acc: 72.00%, Test Loss: 0.5399, Test Acc: 74.10%
+Epoch 249/300: 100%|██████████| 7/7 [01:56<00:00, 16.58s/it, Loss=0.1849, L Loss=0.0116, U Loss=0.1733, LR=0.012506]
+04/21/2025 03:15:13 - INFO - root -   Epoch 249: Val Loss: 0.6399, Val Acc: 72.00%, Test Loss: 0.5279, Test Acc: 76.30%
+Epoch 250/300: 100%|██████████| 7/7 [01:55<00:00, 16.55s/it, Loss=0.1719, L Loss=0.0055, U Loss=0.1664, LR=0.012381]
+04/21/2025 03:17:36 - INFO - root -   Epoch 250: Val Loss: 0.6362, Val Acc: 70.40%, Test Loss: 0.5472, Test Acc: 74.75%
+Epoch 251/300: 100%|██████████| 7/7 [01:54<00:00, 16.40s/it, Loss=0.1805, L Loss=0.0059, U Loss=0.1746, LR=0.012256]
+04/21/2025 03:20:00 - INFO - root -   Epoch 251: Val Loss: 0.6297, Val Acc: 72.60%, Test Loss: 0.5385, Test Acc: 75.50%
+Epoch 252/300: 100%|██████████| 7/7 [01:56<00:00, 16.69s/it, Loss=0.1992, L Loss=0.0111, U Loss=0.1881, LR=0.012130]
+04/21/2025 03:22:24 - INFO - root -   Epoch 252: Val Loss: 0.6487, Val Acc: 71.20%, Test Loss: 0.5429, Test Acc: 75.10%
+Epoch 253/300: 100%|██████████| 7/7 [01:55<00:00, 16.56s/it, Loss=0.1785, L Loss=0.0139, U Loss=0.1646, LR=0.012004]
+04/21/2025 03:24:48 - INFO - root -   Epoch 253: Val Loss: 0.6500, Val Acc: 71.20%, Test Loss: 0.5404, Test Acc: 74.40%
+Epoch 254/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.1758, L Loss=0.0105, U Loss=0.1653, LR=0.011878]
+04/21/2025 03:27:10 - INFO - root -   Epoch 254: Val Loss: 0.6295, Val Acc: 71.80%, Test Loss: 0.5243, Test Acc: 75.70%
+Epoch 255/300: 100%|██████████| 7/7 [01:55<00:00, 16.53s/it, Loss=0.1870, L Loss=0.0110, U Loss=0.1760, LR=0.011752]
+04/21/2025 03:29:33 - INFO - root -   Epoch 255: Val Loss: 0.6484, Val Acc: 71.80%, Test Loss: 0.5483, Test Acc: 75.50%
+Epoch 256/300: 100%|██████████| 7/7 [01:56<00:00, 16.69s/it, Loss=0.1742, L Loss=0.0111, U Loss=0.1631, LR=0.011625]
+04/21/2025 03:31:58 - INFO - root -   Epoch 256: Val Loss: 0.6661, Val Acc: 71.60%, Test Loss: 0.5287, Test Acc: 76.65%
+Epoch 257/300: 100%|██████████| 7/7 [01:57<00:00, 16.76s/it, Loss=0.1830, L Loss=0.0073, U Loss=0.1757, LR=0.011499]
+04/21/2025 03:34:22 - INFO - root -   Epoch 257: Val Loss: 0.6583, Val Acc: 72.60%, Test Loss: 0.5369, Test Acc: 75.05%
+Epoch 258/300: 100%|██████████| 7/7 [01:54<00:00, 16.41s/it, Loss=0.1978, L Loss=0.0114, U Loss=0.1864, LR=0.011372]
+04/21/2025 03:36:44 - INFO - root -   Epoch 258: Val Loss: 0.6620, Val Acc: 70.80%, Test Loss: 0.5419, Test Acc: 75.10%
+Epoch 259/300: 100%|██████████| 7/7 [01:55<00:00, 16.46s/it, Loss=0.1762, L Loss=0.0112, U Loss=0.1649, LR=0.011244]
+04/21/2025 03:39:07 - INFO - root -   Epoch 259: Val Loss: 0.6513, Val Acc: 72.60%, Test Loss: 0.5456, Test Acc: 75.15%
+Epoch 260/300: 100%|██████████| 7/7 [01:54<00:00, 16.41s/it, Loss=0.1790, L Loss=0.0072, U Loss=0.1718, LR=0.011117]
+04/21/2025 03:41:29 - INFO - root -   Epoch 260: Val Loss: 0.6420, Val Acc: 71.20%, Test Loss: 0.5374, Test Acc: 76.70%
+Epoch 261/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.1932, L Loss=0.0089, U Loss=0.1843, LR=0.010989]
+04/21/2025 03:43:51 - INFO - root -   Epoch 261: Val Loss: 0.6664, Val Acc: 72.00%, Test Loss: 0.5345, Test Acc: 75.85%
+Epoch 262/300: 100%|██████████| 7/7 [01:55<00:00, 16.55s/it, Loss=0.1810, L Loss=0.0147, U Loss=0.1663, LR=0.010861]
+04/21/2025 03:46:15 - INFO - root -   Epoch 262: Val Loss: 0.6547, Val Acc: 70.60%, Test Loss: 0.5358, Test Acc: 75.25%
+Epoch 263/300: 100%|██████████| 7/7 [01:56<00:00, 16.60s/it, Loss=0.1908, L Loss=0.0133, U Loss=0.1775, LR=0.010733]
+04/21/2025 03:48:39 - INFO - root -   Epoch 263: Val Loss: 0.6501, Val Acc: 70.80%, Test Loss: 0.5295, Test Acc: 76.25%
+Epoch 264/300: 100%|██████████| 7/7 [01:56<00:00, 16.61s/it, Loss=0.1912, L Loss=0.0105, U Loss=0.1807, LR=0.010604]
+04/21/2025 03:51:03 - INFO - root -   Epoch 264: Val Loss: 0.6405, Val Acc: 70.80%, Test Loss: 0.5376, Test Acc: 76.40%
+Epoch 265/300: 100%|██████████| 7/7 [01:55<00:00, 16.55s/it, Loss=0.1711, L Loss=0.0085, U Loss=0.1626, LR=0.010476]
+04/21/2025 03:53:25 - INFO - root -   Epoch 265: Val Loss: 0.6578, Val Acc: 70.20%, Test Loss: 0.5323, Test Acc: 75.80%
+Epoch 266/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.1684, L Loss=0.0101, U Loss=0.1584, LR=0.010347]
+04/21/2025 03:55:49 - INFO - root -   Epoch 266: Val Loss: 0.6220, Val Acc: 72.60%, Test Loss: 0.5356, Test Acc: 75.75%
+Epoch 267/300: 100%|██████████| 7/7 [01:55<00:00, 16.52s/it, Loss=0.1867, L Loss=0.0103, U Loss=0.1764, LR=0.010218]
+04/21/2025 03:58:12 - INFO - root -   Epoch 267: Val Loss: 0.6640, Val Acc: 72.00%, Test Loss: 0.5350, Test Acc: 75.90%
+Epoch 268/300: 100%|██████████| 7/7 [01:55<00:00, 16.54s/it, Loss=0.1828, L Loss=0.0096, U Loss=0.1732, LR=0.010088]
+04/21/2025 04:00:34 - INFO - root -   Epoch 268: Val Loss: 0.6516, Val Acc: 72.20%, Test Loss: 0.5334, Test Acc: 75.85%
+Epoch 269/300: 100%|██████████| 7/7 [01:55<00:00, 16.52s/it, Loss=0.1865, L Loss=0.0092, U Loss=0.1773, LR=0.009959]
+04/21/2025 04:02:57 - INFO - root -   Epoch 269: Val Loss: 0.6643, Val Acc: 71.40%, Test Loss: 0.5454, Test Acc: 75.15%
+Epoch 270/300: 100%|██████████| 7/7 [01:56<00:00, 16.60s/it, Loss=0.1757, L Loss=0.0078, U Loss=0.1679, LR=0.009829]
+04/21/2025 04:05:20 - INFO - root -   Epoch 270: Val Loss: 0.6512, Val Acc: 70.60%, Test Loss: 0.5419, Test Acc: 75.25%
+Epoch 271/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.1656, L Loss=0.0074, U Loss=0.1582, LR=0.009699]
+04/21/2025 04:07:43 - INFO - root -   Epoch 271: Val Loss: 0.6637, Val Acc: 72.60%, Test Loss: 0.5371, Test Acc: 76.45%
+Epoch 272/300: 100%|██████████| 7/7 [01:56<00:00, 16.60s/it, Loss=0.1841, L Loss=0.0120, U Loss=0.1721, LR=0.009569]
+04/21/2025 04:10:06 - INFO - root -   Epoch 272: Val Loss: 0.6523, Val Acc: 72.40%, Test Loss: 0.5390, Test Acc: 76.20%
+Epoch 273/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.1868, L Loss=0.0067, U Loss=0.1801, LR=0.009438]
+04/21/2025 04:12:28 - INFO - root -   Epoch 273: Val Loss: 0.6558, Val Acc: 71.60%, Test Loss: 0.5534, Test Acc: 75.15%
+Epoch 274/300: 100%|██████████| 7/7 [01:56<00:00, 16.64s/it, Loss=0.1702, L Loss=0.0070, U Loss=0.1631, LR=0.009308]
+04/21/2025 04:14:52 - INFO - root -   Epoch 274: Val Loss: 0.6416, Val Acc: 71.80%, Test Loss: 0.5356, Test Acc: 75.65%
+Epoch 275/300: 100%|██████████| 7/7 [01:54<00:00, 16.33s/it, Loss=0.1694, L Loss=0.0073, U Loss=0.1621, LR=0.009177]
+04/21/2025 04:17:13 - INFO - root -   Epoch 275: Val Loss: 0.6624, Val Acc: 73.20%, Test Loss: 0.5502, Test Acc: 76.30%
+Epoch 276/300: 100%|██████████| 7/7 [01:56<00:00, 16.60s/it, Loss=0.1628, L Loss=0.0109, U Loss=0.1519, LR=0.009046]
+04/21/2025 04:19:37 - INFO - root -   Epoch 276: Val Loss: 0.6588, Val Acc: 71.60%, Test Loss: 0.5536, Test Acc: 75.05%
+Epoch 277/300: 100%|██████████| 7/7 [01:54<00:00, 16.36s/it, Loss=0.1625, L Loss=0.0087, U Loss=0.1539, LR=0.008915]
+04/21/2025 04:22:02 - INFO - root -   Epoch 277: Val Loss: 0.6691, Val Acc: 72.20%, Test Loss: 0.5498, Test Acc: 76.20%
+Epoch 278/300: 100%|██████████| 7/7 [01:56<00:00, 16.66s/it, Loss=0.1784, L Loss=0.0057, U Loss=0.1727, LR=0.008784]
+04/21/2025 04:24:25 - INFO - root -   Epoch 278: Val Loss: 0.6597, Val Acc: 73.60%, Test Loss: 0.5417, Test Acc: 76.00%
+Epoch 279/300: 100%|██████████| 7/7 [01:55<00:00, 16.54s/it, Loss=0.1813, L Loss=0.0059, U Loss=0.1754, LR=0.008652]
+04/21/2025 04:26:47 - INFO - root -   Epoch 279: Val Loss: 0.6574, Val Acc: 72.40%, Test Loss: 0.5414, Test Acc: 75.35%
+Epoch 280/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.1927, L Loss=0.0102, U Loss=0.1825, LR=0.008520]
+04/21/2025 04:29:08 - INFO - root -   Epoch 280: Val Loss: 0.6709, Val Acc: 72.20%, Test Loss: 0.5479, Test Acc: 76.50%
+Epoch 281/300: 100%|██████████| 7/7 [01:56<00:00, 16.65s/it, Loss=0.1866, L Loss=0.0070, U Loss=0.1796, LR=0.008389]
+04/21/2025 04:31:32 - INFO - root -   Epoch 281: Val Loss: 0.6782, Val Acc: 71.60%, Test Loss: 0.5561, Test Acc: 75.35%
+Epoch 282/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.1721, L Loss=0.0090, U Loss=0.1631, LR=0.008257]
+04/21/2025 04:33:55 - INFO - root -   Epoch 282: Val Loss: 0.6491, Val Acc: 72.00%, Test Loss: 0.5457, Test Acc: 76.45%
+Epoch 283/300: 100%|██████████| 7/7 [01:58<00:00, 16.99s/it, Loss=0.1872, L Loss=0.0060, U Loss=0.1813, LR=0.008124]
+04/21/2025 04:36:24 - INFO - root -   Epoch 283: Val Loss: 0.6605, Val Acc: 72.80%, Test Loss: 0.5536, Test Acc: 75.85%
+Epoch 284/300: 100%|██████████| 7/7 [01:59<00:00, 17.06s/it, Loss=0.1718, L Loss=0.0065, U Loss=0.1653, LR=0.007992]
+04/21/2025 04:38:51 - INFO - root -   Epoch 284: Val Loss: 0.6692, Val Acc: 72.00%, Test Loss: 0.5520, Test Acc: 75.90%
+Epoch 285/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.1850, L Loss=0.0079, U Loss=0.1772, LR=0.007859]
+04/21/2025 04:41:14 - INFO - root -   Epoch 285: Val Loss: 0.6833, Val Acc: 72.00%, Test Loss: 0.5548, Test Acc: 75.65%
+Epoch 286/300: 100%|██████████| 7/7 [01:54<00:00, 16.42s/it, Loss=0.1661, L Loss=0.0069, U Loss=0.1592, LR=0.007727]
+04/21/2025 04:43:36 - INFO - root -   Epoch 286: Val Loss: 0.6862, Val Acc: 70.40%, Test Loss: 0.5482, Test Acc: 75.70%
+Epoch 287/300: 100%|██████████| 7/7 [01:55<00:00, 16.56s/it, Loss=0.1832, L Loss=0.0061, U Loss=0.1771, LR=0.007594]
+04/21/2025 04:45:59 - INFO - root -   Epoch 287: Val Loss: 0.6976, Val Acc: 71.80%, Test Loss: 0.5590, Test Acc: 76.20%
+Epoch 288/300: 100%|██████████| 7/7 [01:56<00:00, 16.59s/it, Loss=0.1721, L Loss=0.0069, U Loss=0.1652, LR=0.007461]
+04/21/2025 04:48:22 - INFO - root -   Epoch 288: Val Loss: 0.6777, Val Acc: 72.80%, Test Loss: 0.5367, Test Acc: 77.35%
+Epoch 289/300: 100%|██████████| 7/7 [01:55<00:00, 16.45s/it, Loss=0.1850, L Loss=0.0063, U Loss=0.1787, LR=0.007327]
+04/21/2025 04:50:45 - INFO - root -   Epoch 289: Val Loss: 0.6645, Val Acc: 74.20%, Test Loss: 0.5511, Test Acc: 76.45%
+Epoch 290/300: 100%|██████████| 7/7 [01:55<00:00, 16.56s/it, Loss=0.1875, L Loss=0.0057, U Loss=0.1817, LR=0.007194]
+04/21/2025 04:53:08 - INFO - root -   Epoch 290: Val Loss: 0.6780, Val Acc: 72.40%, Test Loss: 0.5442, Test Acc: 75.90%
+Epoch 291/300: 100%|██████████| 7/7 [01:56<00:00, 16.64s/it, Loss=0.1822, L Loss=0.0079, U Loss=0.1744, LR=0.007061]
+04/21/2025 04:55:32 - INFO - root -   Epoch 291: Val Loss: 0.6652, Val Acc: 72.20%, Test Loss: 0.5390, Test Acc: 76.65%
+Epoch 292/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.1891, L Loss=0.0084, U Loss=0.1807, LR=0.006927]
+04/21/2025 04:57:55 - INFO - root -   Epoch 292: Val Loss: 0.6777, Val Acc: 72.60%, Test Loss: 0.5548, Test Acc: 76.45%
+Epoch 293/300: 100%|██████████| 7/7 [01:55<00:00, 16.50s/it, Loss=0.1942, L Loss=0.0094, U Loss=0.1847, LR=0.006793]
+04/21/2025 05:00:17 - INFO - root -   Epoch 293: Val Loss: 0.6845, Val Acc: 72.60%, Test Loss: 0.5613, Test Acc: 76.05%
+Epoch 294/300: 100%|██████████| 7/7 [01:55<00:00, 16.51s/it, Loss=0.1727, L Loss=0.0056, U Loss=0.1671, LR=0.006659]
+04/21/2025 05:02:40 - INFO - root -   Epoch 294: Val Loss: 0.6631, Val Acc: 72.60%, Test Loss: 0.5584, Test Acc: 77.05%
+Epoch 295/300: 100%|██████████| 7/7 [01:54<00:00, 16.40s/it, Loss=0.1967, L Loss=0.0060, U Loss=0.1907, LR=0.006525]
+04/21/2025 05:05:03 - INFO - root -   Epoch 295: Val Loss: 0.6450, Val Acc: 74.60%, Test Loss: 0.5434, Test Acc: 76.75%
+Epoch 296/300: 100%|██████████| 7/7 [01:56<00:00, 16.68s/it, Loss=0.1827, L Loss=0.0074, U Loss=0.1753, LR=0.006391]
+04/21/2025 05:07:26 - INFO - root -   Epoch 296: Val Loss: 0.6926, Val Acc: 72.80%, Test Loss: 0.5549, Test Acc: 77.10%
+Epoch 297/300: 100%|██████████| 7/7 [01:56<00:00, 16.63s/it, Loss=0.1834, L Loss=0.0072, U Loss=0.1762, LR=0.006257]
+04/21/2025 05:09:49 - INFO - root -   Epoch 297: Val Loss: 0.6729, Val Acc: 71.80%, Test Loss: 0.5521, Test Acc: 76.80%
+Epoch 298/300: 100%|██████████| 7/7 [01:55<00:00, 16.43s/it, Loss=0.1806, L Loss=0.0062, U Loss=0.1744, LR=0.006122]
+04/21/2025 05:12:11 - INFO - root -   Epoch 298: Val Loss: 0.6913, Val Acc: 72.80%, Test Loss: 0.5480, Test Acc: 77.70%
+Epoch 299/300: 100%|██████████| 7/7 [01:55<00:00, 16.49s/it, Loss=0.1818, L Loss=0.0085, U Loss=0.1734, LR=0.005987]
+04/21/2025 05:14:33 - INFO - root -   Epoch 299: Val Loss: 0.6572, Val Acc: 72.80%, Test Loss: 0.5503, Test Acc: 76.40%
+Epoch 300/300: 100%|██████████| 7/7 [01:55<00:00, 16.46s/it, Loss=0.1784, L Loss=0.0072, U Loss=0.1712, LR=0.005853]
+04/21/2025 05:16:55 - INFO - root -   Epoch 300: Val Loss: 0.6795, Val Acc: 73.40%, Test Loss: 0.5630, Test Acc: 75.95%
+04/21/2025 05:17:17 - INFO - root -   Final Test Loss: 0.5937, Test Acc: 75.90%
+
+Process finished with exit code 0
