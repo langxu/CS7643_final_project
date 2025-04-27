@@ -11,8 +11,8 @@ from tqdm import tqdm
 
 # Import modules from our project
 # Import get_cifar10_dataloaders, NUM_CLASSES, CIFAR10_CLASSES
-from Tianyi_Model.data_preparation import NUM_CLASSES, CIFAR10_CLASSES
-from Tianyi_Model.model import (
+from Dimension_Reduction_Model.data_preparation import NUM_CLASSES, CIFAR10_CLASSES
+from Dimension_Reduction_Model.model import (
     InvariantMappingModel,
     build_encoder,
     ClassifierHead,
@@ -21,7 +21,7 @@ from Tianyi_Model.model import (
 )
 
 # Import both loss functions
-from Tianyi_Model.loss import get_loss_function, get_triplet_loss_function
+from Dimension_Reduction_Model.loss import get_loss_function, get_triplet_loss_function
 
 
 # --- Hyperparameters ---

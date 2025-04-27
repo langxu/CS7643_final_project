@@ -4,8 +4,8 @@ from PIL import Image
 import os
 
 # Import modules from our project
-from Tianyi_Model.model import InvariantMappingModel, build_encoder
-from Tianyi_Model.data_preparation import CIFAR10_MEAN, CIFAR10_STD # Need normalization constants
+from Dimension_Reduction_Model.model import InvariantMappingModel, build_encoder
+from Dimension_Reduction_Model.data_preparation import CIFAR10_MEAN, CIFAR10_STD # Need normalization constants
 
 # Device configuration
 # device = torch.device(
